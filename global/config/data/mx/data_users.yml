@@ -1,0 +1,186 @@
+# config/data_users.yml
+## YAML Template
+
+# MEXICO
+#USERS CLARO DRIVE
+user_name: Qa
+user_lastname: Automation
+user_email_tdc: usuario.tdc3@test.com  #usuario.tdc2@test.com
+user_password: I234567o
+user_password2: Qa654321
+user_password_business: Qa654321
+user_email_telcel: user_cd_telcel@mailinator.com
+user_email_tlmx: telmex1@5-mail.info
+user_email_without: fowcer_omen@hotmail.com
+user_email_wrong: correoerroneo@test.com
+user_email_block: auto.bloqueo@test.com
+user_temp: visualyukkie@mailinator.com
+fake_email1: visualyukkie1@mailinator.com
+fake_email2: visualyukkie2@mailinator.com
+fake_email3: visualyukkie3@mailinator.com
+fake_email4: visualyukkie4@mailinator.com
+fake_email5: visualyukkie5@mailinator.com
+read_email: user_read_only_email@test.com
+read_video: user_read_only_cv@test.com
+read_musica: user_read_only_cm@test.com
+family_space_1: espaciofamilar1@getnada.com
+#numbers for register in cd_web
+number_short: 123456ra
+number_invent: 1234567890
+number_other: 5569312503
+number_exist: 5559755064
+number_tlmx_short: 69312503
+number_tlmx_valid: 4351022017
+number_debt: 5889130001
+number_telcel_short: 69312503
+number_telcel_existing: 5569312503
+number_telcel_not: 5569312503
+password_wrong_telcel: 123456
+#passwords types
+password_cl: CAPITALL
+password_ll: lowercase
+password_cl-ll: miPasword
+password_n: 12345678
+password_nl: i2345678
+password_nc: I2345678
+password_valid: I234567o
+password_samed: I2222222
+password_short: 12345
+wrong_password: 12345678
+#numbers tlmx
+tlmx_email_0: telmex.auto@hotmail.com
+tlmx_num_0: 3111290267 #3111290267
+tlmx_email_1: telmex.auto@hotmail.com
+tlmx_num_1: 3111290267 #3111290267
+tlmx_email_2: telmex.drive+5553998906@gmail.com
+tlmx_num_2: 5553998906
+
+tlmx_email_3: telmex.drive+4351022017@gmail.com
+tlmx_num_3: 4351022017
+tlmx_email_4: telmex.drive+9676783700@gmail.com
+tlmx_num_4: 9676783700
+tlmx_email_5: telmex.drive+2221697336@gmail.com
+tlmx_num_5: 2221697336
+tlmx_email_6: telmex.drive+5555469794@gmail.com
+tlmx_num_6: 5555469794
+tlmx_email_7: telmex.drive+8110520270@gmail.com
+tlmx_num_7: 8110520270
+tlmx_email_inv: correo invalido
+password_qa: Qa654321
+#numbers telcel
+number_telcel_valid: '5533997513' #Número para Chrome - SIM 3
+password_telcel: 'jkyf'
+telcel_email_1: telcel.5533997513@gmail.com
+number_telcel_valid1: '5510137291' #Número para Mozilla - SIM 13
+password_telcel1: Qa654321
+telcel_email_2: telcel.5533997513J@gmail.com
+number_telcel_valid2: '5510137291' #Número para Safari - SIM 7
+password_telcel2: Qa654321
+number_telcel_valid3: 5510137291
+password_telcel3: Qa654321
+number_telcel_valid4: 5564928908
+password_telcel4: Qa654321
+#users cm y cv
+user_cmcv_email: user_cm_cv@getnada.com
+user_cmcv_password: I234567o #123456
+#users cm
+user_cm_email_tdc: cd.cm.tdc@test.com
+user_cm_email_telcel: evangelistahf@globalhitss.com
+user_cm_email_telmex: fowcer@gmail.com
+user_cm_password: metroit3
+user_cm_without: user_cm2@test.com
+user_cm_metodos: musica.metodos.cd@gmail.com
+user_cm_gallery: cuenta.galery.cm@mailinator.com
+#users cv
+user_cv_email_tdc: claro.video.user.tdc@test.com
+user_cv_email_telcel: evangelistahf@globalhitss.com
+user_cv_email_telmex: fowcer@gmail.com
+user_other_password: metroit3
+user_cv_without: user_cv4@test.com
+user_cv_metodos: video.metodos.cd@gmail.com
+user_cv_gallery: cuenta.galery.todo@tester.com
+#val tdc
+val_payment_tc_nombre: Qa
+val_payment_tc_numero: 4523984527360876
+ivalid_tc_number: '1234567890123456'
+val_payment_tc_empresa: 'visa' # opciones: 'mastercard, visa'
+val_payment_tc_cvv: 698
+val_payment_tc_mes_exp: '01'
+val_payment_tc_mes_exp2: '01'
+val_payment_tc_anio_exp: 22
+val_payment_tc_anio_expired: 10
+val_payment_tc_anio_exp2: 2022
+val_payment_tc_direccion: Miguel de Cervantes
+val_payment_tc_ciudad: Polanco
+val_payment_tc_estado: Campeche
+val_payment_tc_codigo_postal: 11111
+val_payment_tc_telefono: 5544332211
+val_payment_tc_dia_usuario: 1
+val_payment_tc_mes_usuario: Enero
+val_payment_tc_anio_usuario: 1995
+val_short_tc_numero: 23984527360876
+val_lett_tc_numero: sdfnos
+val_char_tc_numero: "`^^^ººº"
+val_short_tc_cvv: 6
+val_long_tc_cvv: 6666
+val_wrong_tc_cvv: 123
+val_wrong_mes_exp: "10"
+val_special_characters: "^"
+val_cancel_tc_nombre: Tarjeta cancela
+val_cancel_tc_numero: '4552559103213228'
+val_cancel_tc_empresa: mastercard # opciones: 'mastercard, visa'
+val_cancel_tc_cvv: '560'
+val_cancel_tc_mes_exp: '02'
+val_cancel_tc_anio_exp: 19
+#check boxes
+check_true: true
+check_false: false
+#val home
+name_folder: Carpeta Automatizacion
+name_file: Archivo Automatizacion
+testing_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+
+#CUENTAS ACTUALIZADAS
+number_telmex_valid1: 3111290267 #Insumo num 29 de Telmex fecha de registro 12/07/2019
+number_telmex_valid2: 5555555555
+number_telmex_valid3: 5555555555
+number_telmex_valid4: 5555555555
+number_telmex_valid5: 5555555555
+
+
+
+chr.tlmx.25: telmex.auto@hotmail.com #Cuenta en partner Telmex con subscripción de 25 GB
+chr.tel.25: prod.chr.tcel.25@getnada.com #Cuenta en partner Telcel con subscripción de 25 GB
+chr.cm.75: chr.cm.75@getnada.com #Cuenta en partner música con subscripción de 75 GB
+chr.cv.75: prod.chr.cv.75@getnada.com #Cuenta en partner video con subscripción de 75 GB
+chr.correo.75: chr.correo.75@getnada.com #Cuenta en partner correo con subscripción de 75 GB
+
+chr.bus: qa.negocio@yahoo.com #Cuenta en partner Negocio
+
+moz.tlmx.25: telmex.auto@hotmail.com #Cuenta en partner Telmex con subscripción de 25 GB
+moz.tel.25: prod.moz.tcel.25@getnada.com #Cuenta en partner Telcel con subscripción de 25 GB
+moz.cm.75: prod.moz.cm.75@getnada.com #Cuenta en partner música con subscripción de 75 GB
+moz.cv.75: prod.moz.cv.75@getnada.com #Cuenta en partner video con subscripción de 75 GB
+moz.correo.75: moz.correo.75@getnada.com #Cuenta en partner correo con subscripción de 75 GB
+moz.bus: qa.negocio@yahoo.com #Cuenta en partner Negocio
+
+saf.tlmx.25: telmex.auto@hotmail.comm #Cuenta en partner Telmex con subscripción de 25 GB
+saf.tel.25: prod.saf.tcel.25@getnada.com #Cuenta en partner Telcel con subscripción de 25 GB
+saf.cm.75: prod.saf.cm.75@getnada.com #Cuenta en partner música con subscripción de 75 GB
+saf.cv.75: prod.saf.cv.75@getnada.com #Cuenta en partner video con subscripción de 75 GB
+saf.correo.75: saf.correo.75@getnada.com #Cuenta en partner correo con subscripción de 75 GB
+saf.bus: qa.negocio@yahoo.com #Cuenta en partner Negocio
+
+edge.tlmx.25: telmex.auto@hotmail.com #Cuenta en partner Telmex con subscripción de 25 GB
+edge.tel.25: prod.edge.tcel.25@getnada.com #Cuenta en partner Telcel con subscripción de 25 GB
+edge.cm.75: prod.edge.cm.75@getnada.com #Cuenta en partner música con subscripción de 75 GB
+edge.cv.75: prod.edge.cv.75@getnada.com #Cuenta en partner video con subscripción de 75 GB
+edge.correo.75: prod.edge.correo.75@getnada.com #Cuenta en partner correo con subscripción de 75 GB
+edge.bus: qa.negocio@yahoo.com #Cuenta en partner Negocio
+
+ie.tlmx.25: telmex.auto@hotmail.com #Cuenta en partner Telmex con subscripción de 25 GB
+ie.tel.25: prod.ie.tcel.25@getnada.com #Cuenta en partner Telcel con subscripción de 25 GB
+ie.cm.75: prod.ie.cm.75@getnada.com #Cuenta en partner música con subscripción de 75 GB
+ie.cv.75: prod.ie.cv.75@getnada.com #Cuenta en partner video con subscripción de 75 GB
+ie.correo.75: prod.ie.correo.75@getnada.com #Cuenta en partner correo con subscripción de 75 GB
+ie.bus: qa.negocio@yahoo.com #Cuenta en partner Negocio

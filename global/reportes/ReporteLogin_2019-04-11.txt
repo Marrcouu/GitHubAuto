@@ -1,0 +1,36 @@
+Navegador: chrome - Hora: 10:55 
+	Partner: correo - > 22.553515 seg
+
+Navegador: chrome - Hora: 10:57 
+	Partner: telmex - > 36.643498 seg
+
+Navegador: chrome - Hora: 10:58 
+	Partner: telcel - > 38.470591 seg
+
+Navegador: chrome - Hora: 10:59 
+	Partner: claro musica - > 17.697188 seg
+
+Navegador: chrome - Hora: 11:00 
+	Partner: claro video - > 18.764227 seg
+
+Navegador: chrome - Hora: 11:50 
+	Partner: correo - > 14.540358 seg
+
+Navegador: chrome - Hora: 11:51 
+	Partner: telmex - > 31.888123 seg
+
+Navegador: chrome - Hora: 11:52 
+	Partner: telcel - > 18.782271 seg
+
+Navegador: chrome - Hora: 11:53 
+	Partner: claro musica - > 17.413081 seg
+
+Navegador: chrome - Hora: 11:54 
+	Partner: claro video - > 14.275263 seg
+
+Navegador: chrome - Hora: 12:07  - Ambiente: PROD
+	Partner: correo - > 14.082114 seg
+
+Navegador: chrome - Hora: 12:15  - Ambiente: TEST
+	Partner: correo - > 22.427493 seg
+

@@ -1,0 +1,20 @@
+Writing log file to: /Users/davidchavezavila/amco/automation/capybara/xdk/cv_xdk/global/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Users/davidchavezavila/amco/automation/capybara/xdk/cv_xdk/helpers/../global/config/jmeter/user_clear_devices.jmx
+Starting the test @ Fri Dec 02 08:45:41 CST 2016 (1480689941221)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary +     25 in 00:00:19 =    1.3/s Avg:  2287 Min:   197 Max: 10681 Err:     0 (0.00%) Active: 8 Started: 8 Finished: 0
+summary +     56 in 00:00:29 =    1.9/s Avg:  4691 Min:  1469 Max: 25337 Err:     0 (0.00%) Active: 8 Started: 8 Finished: 0
+summary =     81 in 00:00:49 =    1.7/s Avg:  3949 Min:   197 Max: 25337 Err:     0 (0.00%)
+summary +     28 in 00:00:31 =    0.9/s Avg:  6055 Min:  1441 Max: 20339 Err:     0 (0.00%) Active: 4 Started: 8 Finished: 4
+summary =    109 in 00:01:19 =    1.4/s Avg:  4490 Min:   197 Max: 25337 Err:     0 (0.00%)
+summary +     25 in 00:01:00 =    0.4/s Avg: 10069 Min:  3192 Max: 28579 Err:     0 (0.00%) Active: 4 Started: 8 Finished: 4
+summary =    134 in 00:02:19 =    1.0/s Avg:  5531 Min:   197 Max: 28579 Err:     0 (0.00%)
+summary +     12 in 00:00:31 =    0.4/s Avg:  9607 Min:  3373 Max: 26628 Err:     0 (0.00%) Active: 2 Started: 8 Finished: 6
+summary =    146 in 00:02:49 =    0.9/s Avg:  5866 Min:   197 Max: 28579 Err:     0 (0.00%)
+summary +      5 in 00:00:32 =    0.2/s Avg: 10826 Min:  3687 Max: 20052 Err:     0 (0.00%) Active: 1 Started: 8 Finished: 7
+summary =    151 in 00:03:21 =    0.8/s Avg:  6030 Min:   197 Max: 28579 Err:     0 (0.00%)
+summary +      1 in 00:00:04 =    0.3/s Avg:  3466 Min:  3466 Max:  3466 Err:     0 (0.00%) Active: 0 Started: 8 Finished: 8
+summary =    152 in 00:03:25 =    0.7/s Avg:  6013 Min:   197 Max: 28579 Err:     0 (0.00%)
+Tidying up ...    @ Fri Dec 02 08:49:06 CST 2016 (1480690146721)
+... end of run

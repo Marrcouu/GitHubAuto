@@ -1,0 +1,27 @@
+Navegador: chrome - Hora: 10:51  - Ambiente: TEST
+	Partner: correo - > 21.916905 seg
+
+Navegador: chrome - Hora: 10:54  - Ambiente: TEST
+	Partner: claro musica - > 15.962929 seg
+
+Navegador: chrome - Hora: 10:55  - Ambiente: TEST
+	Partner: claro video - > 19.32705 seg
+
+Navegador: chrome - Hora: 11:06  - Ambiente: TEST
+	Partner: correo - > 22.589895 seg
+
+Navegador: chrome - Hora: 11:07  - Ambiente: TEST
+	Partner: telmex - > 9.112812 seg
+
+Navegador: chrome - Hora: 11:08  - Ambiente: TEST
+	Partner: correo - > 20.058736 seg
+
+Navegador: chrome - Hora: 11:09  - Ambiente: TEST
+	Partner: telmex - > 9.380732 seg
+
+Navegador: chrome - Hora: 11:09  - Ambiente: TEST
+	Partner: claro musica - > 13.139456 seg
+
+Navegador: chrome - Hora: 11:10  - Ambiente: TEST
+	Partner: claro video - > 16.077573 seg
+

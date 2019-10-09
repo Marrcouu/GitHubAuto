@@ -1,0 +1,10 @@
+Writing log file to: /Users/davidchavezavila/automation/video/cv_web/global/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Users/davidchavezavila/automation/video/cv_web/helpers/../global/config/jmeter/user_clear_devices.jmx
+Starting the test @ Tue May 23 20:39:13 CDT 2017 (1495589953142)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary +    123 in 00:00:19 =    6.4/s Avg:  1731 Min:    53 Max:  6488 Err:     0 (0.00%) Active: 16 Started: 16 Finished: 0
+summary +     21 in 00:00:04 =    5.9/s Avg:  3442 Min:    54 Max:  4878 Err:     0 (0.00%) Active: 0 Started: 16 Finished: 16
+summary =    144 in 00:00:23 =    6.3/s Avg:  1981 Min:    53 Max:  6488 Err:     0 (0.00%)
+Tidying up ...    @ Tue May 23 20:39:36 CDT 2017 (1495589976270)
+... end of run

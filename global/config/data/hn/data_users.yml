@@ -1,0 +1,174 @@
+# config/data_users.yml
+## YAML Template
+
+# HONDURAS
+#USERS CLARO DRIVE
+user_name: fowcer
+user_lastname: balthier
+user_email_tdc: usuario_tdc@test.com
+user_password: I234567o
+user_email_tlmx: fowcer@gmail.com
+user_email_tlmx2: user_tlmx@test.com
+user_email_telcel: user_tlcl@test.com
+user_email_without: fowcer_omen@hotmail.com
+user_email_wrong: prueba@test.com
+#numbers for register in cd_web
+number_short: 123456
+number_invent: 1234567890
+number_other: 5569312503
+number_exist: 5559755064
+#passwords types
+password_cl: CAPITALL
+password_ll: lowercase
+password_cl-ll: miPasword
+password_n: 12345678
+password_nl: i2345678
+password_nc: I2345678
+password_valid: I234567o
+password_samed: I2222222
+password_short: 12345
+#numbers tlmx
+number_tlmx_short: 69312503
+number_tlmx_valid: 4351022017
+number_debt: 5889130001
+#numbers telcel
+number_telcel_short: 69312503
+number_telcel_existing: 5569312503
+number_telcel_not: 5569312503
+password_wrong_telcel: 123456
+number_telcel_valid: 5554352156
+password_telcel: AutoQA2018
+number_telcel_valid2: 5572228853
+password_telcel2: Qa654321
+#users cm y cv
+user_cmcv_email: user_cm_cv@test.com
+user_cmcv_password: I234567o
+#users cm
+user_cm_email_tdc: cd.cm.tdc@test.com
+user_cm_email_telcel: evangelistahf@globalhitss.com
+user_cm_email_telmex: fowcer@gmail.com
+user_cm_password: metroit3
+user_cm_without: user_cm2@test.com
+#users cv
+user_cv_email_tdc: claro.video.user.tdc@test.com
+user_cv_email_telcel: evangelistahf@globalhitss.com
+user_cv_email_telmex: fowcer@gmail.com
+user_other_password: metroit3
+user_cv_without: user_cv@test.com
+#numbers claro movil
+number_claromovil_short: 693125
+number_claromovil_existing: 5569312503
+number_claromovil_not: 69312503
+password_wrong_claromovil: 123456
+number_claromovil_valid: 55693125
+password_claromovil: AutoQA2018
+number_claromovil_valid2: 5572228853
+password_claromovil2: Qa654321
+number_claromovil_existing: 55693125
+
+
+val_payment_tc_nombre: Arturo Gomez Garza
+val_payment_tc_numero: '4523984527360876'
+ivalid_tc_number: '1234567890123456'
+val_payment_tc_empresa: mastercard # opciones: 'mastercard, visa'
+val_payment_tc_cvv: '698'
+val_payment_tc_mes_exp: 01
+val_payment_tc_mes_exp2: "01"
+val_payment_tc_anio_exp: '22'
+val_payment_tc_anio_expired: '16'
+val_payment_tc_anio_exp2: 2022
+val_payment_tc_direccion: Miguel de Cervantes
+val_payment_tc_ciudad: Polanco
+val_payment_tc_estado: Campeche
+val_payment_tc_codigo_postal: 11111
+val_payment_tc_telefono: 5544332211
+val_payment_tc_dia_usuario: 1
+val_payment_tc_mes_usuario: Enero
+val_payment_tc_anio_usuario: 1995
+val_short_tc_numero: 23984527360876
+val_short_tc_cvv: 6
+val_long_tc_cvv: 6666
+val_wrong_tc_cvv: 123
+val_wrong_mes_exp: 10
+val_special_characters: "^"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#check boxes
+check_true: true
+check_false: false
+#user_id=19300147
+user_reg: reg.v.web.mx@gmail.com
+pass_reg: 123456
+#user_id=19300899
+user_sus: sus.v.web.mx@gmail.com
+pass_sus: 123456
+user_rega: rega.v.web.mx@gmail.com
+pass_rega: 123456
+user_regatm: regatm.v.xdk.mx@gmail.com
+pass_regatm: 123456
+user_regatf: regatf.v.xdk.mx@gmail.com
+pass_regatf: 123456
+user_degus: clarovideotest.mx@gmail.com
+pass_degus: Gestion123
+user_reg_cp: reg.v.web.cp.mx@gmail.com   # pass gmail => 4mc01234
+pass_reg_cp: 123456
+user_sus_cp: sus.v.web.cp.mx@gmail.com   # pass gmail => 4mc01234
+pass_sus_cp: 123456
+code_pin_cp: 123456 # pin code para usuario suscrito y registrado de control parental. se debe configurar el mismo para ambos usuarios o mas en caso de agregar mas cuentas para control parental
+
+# Usuarios para Feature Live content con suscripción Telmex y por Browser
+user_sus_lc_tf_moz: sus.lv.firefox.tf@test.com
+pass_sus_lc_tf_moz: 123456
+user_sus_lc_tf_cr: sus.lv.chrome2.tf@test.com
+pass_sus_lc_tf_cr: 123456
+user_sus_lc_tf_saf: sus.lv.safari.tf@test.com
+pass_sus_lc_tf_saf: 123456
+# Usuarios para Feature Live content con suscripción TDC y por Browser
+user_sus_lc_tdc_moz: sus.lv.firefox.tc@test.com
+pass_sus_lc_tdc_moz: 123456
+user_sus_lc_tdc_cr: sus.lv.chrome.tc@test.com
+pass_sus_lc_tdc_cr: 123456
+user_sus_lc_tdc_saf: sus.lv.safari.tc@test.com
+pass_sus_lc_tdc_saf: 123456
+# Usuario registrado con metodo de pago asociado TDC
+user_rega_lc_tdc_saf: reg.lv.safari.tc@test.com
+pass_rega_lc_tdc_saf: 123456
+user_rega_lc_tdc_cr: reg.lv.chrome.tc@test.com
+pass_rega_lc_tdc_cr: 123456
+user_rega_lc_tdc_moz: reg.lv.firefox.tc@test.com
+pass_rega_lc_tdc_moz: 123456
+# Usuario registrado con metodo de pago asociado Telmex
+user_rega_lc_tf_moz: reg.lv.firefox.tf@test.com
+pass_rega_lc_tf_moz: 123456
+user_rega_lc_tf_cr: reg.lv.chrome.tf@test.com
+pass_rega_lc_tf_cr: 123456
+user_rega_lc_tf_saf: reg.lv.safari.tf@test.com
+pass_rega_lc_tf_saf: 123456
+# Números TELMEX para la renta de usuario sin método de pago asociado
+num_telmex_cr: 5553536911
+# Usuarios Area de monitoreo
+user_sus_mon: sus.mon.cv@gmail.com
+pass_sus_mon: 123456
+# Usuarios para suscripciones telmex
+user_reg_telm: reg.web.tel@mx.com
+pass_reg_telm: 123456
+# Usuarios para suscripciones telmex
+user_reg_telcel: reg.web.telcel@mx.com
+pass_reg_telcel: 123456
+# Números TELMEX para la renta de usuario sin método de pago asociado
+num_telcel_sus: 5510102216
+

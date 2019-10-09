@@ -1,0 +1,209 @@
+## YAML Template
+####################################
+# PERU
+####################################
+# tarjeta de credito, datos
+val_payment_tc_nombre: Arturo Gomez Garza
+val_payment_tc_numero: 4523984527360876
+val_payment_tc_empresa: mastercard # opciones: 'mastercard, visa'
+val_payment_tc_cvv: 698
+val_payment_tc_mes_exp: 01
+val_payment_tc_mes_exp2: "01"
+val_payment_tc_anio_exp: 22
+val_payment_tc_anio_exp2: 2022
+val_payment_tc_direccion: Miguel de Cervantes
+val_payment_tc_ciudad: Polanco
+val_payment_tc_estado: Campeche
+val_payment_tc_codigo_postal: 11111
+val_payment_tc_telefono: 5544332211
+val_payment_tc_dia_usuario: 1
+val_payment_tc_mes_usuario: Enero
+val_payment_tc_anio_usuario: 1995
+val_short_tc_numero: 23984527360876
+val_short_tc_cvv: 6
+val_long_tc_cvv: 6666
+val_wrong_tc_cvv: 123
+val_wrong_mes_exp: 10
+
+credit_card_name_test: Fernando Alonso Ruiz
+credit_card_number_test: 5142987626354239
+credit_card_type_test: mastercard
+credit_card_cvv_test: 723
+credit_card_cvv_wrong_test: 111
+credit_card_expiration_month_test: 3
+credit_card_expiration_year_test: 2022
+
+credit_card_name_prod: Arturo Gomez Garza
+credit_card_number_prod: 4523984527360876
+credit_card_type_prod: visa
+credit_card_cvv_prod: 698
+credit_card_cvv_wrong_prod: 111
+credit_card_expiration_month_prod: '01'
+credit_card_expiration_year_prod: 2022
+
+credit_card_address: Miguel de Cervantes
+credit_card_city: Polanco
+credit_card_state: Distrito Federal
+credit_card_zip_code: 12345
+credit_card_phone: 1234567890
+credit_card_birth_year: 1990
+credit_card_birth_month: 1
+credit_card_birth_day: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# textos de pagina de confirmacion de registro con ip telmex
+txt_active_telmex: Activa tu cuenta y accede a miles de contenidos sin costo.
+
+
+
+# menus
+menu_inicio: Inicio
+menu_basico: Básico
+menu_catalogo: Catálogo
+menu_ppe: Pago por Evento
+menu_ninios: Niños
+menu_claro_tv: Claro sports
+menu_tv: TV
+lbl_recomendacion_home: Claro video te recomienda
+menu_ingresar: Ingresar
+menu_registro: Registrate
+menu_salir: Salir
+menu_fox: Play & Go
+
+menu_peliculas: Películas
+menu_infantil_y_familia: Infantil y Familia
+menu_documentales: Documentales
+menu_historia: Historia
+
+txt_renta_exitosa: ¡Tu renta fue exitosa! Ponte cómodo que comienza la función.
+txt_suscripcion_exitosa: La suscripción a Claro video es tuya.
+txt_suscripcion_fox_exitosa: Ya estás suscrito a FOX PREMIUM
+
+txt_spent_promotional_code: ¡Aguarda! Este código promocional ya fue utilizado. ¿Tienes otro? ¡Ingrésalo!
+txt_rent_in_subscription: ¡Un momento! El código promocional que estás ingresando solo te permite rentar contenidos.
+txt_subscription_in_rent: ¡Espera! Este código promocional solo te permite adquirir la suscripción.
+txt_random_promotional_code: ¡Ouch! El código promocional ingresado no existe. ¿Tienes otro? ¡Ingrésalo!
+txt_invalid_promotional_code: ¡Ouch! El código promocional ingresado no existe. ¿Tienes otro? ¡Ingrésalo!
+txt_incomplete_promotional_code: ¡Atención! Ingresa todos los caracteres numéricos de tu código.
+txt_expired_promotional_code: ¡Lo sentimos! Esta promoción llegó a su fin.
+txt_foreign_promotional_code: ¡Ouch! El código promocional ingresado no pertenece a tu región.
+
+txt_suscripcion_fox_vigente: Actualmente estás disfrutando la Suscripción FOX PREMIUM con cargo mensual a tarjeta de crédito hasta el
+txt_suscripcion_claro_tarjeta: Actualmente estás disfrutando tu Suscripción Claro video con cargo mensual a tarjeta de crédito hasta el
+txt_suscripcion_claro_codigo_promocional: Actualmente estás disfrutando tu Suscripción Claro video con cargo mensual a codigo promocional hasta el
+txt_suscripcion_claro_cancelado: Tu renovación automática fue suspendida con éxito.
+
+txt_encabezado_perfil_suscripcion_fox: Suscripción FOX PREMIUM
+txt_encabezado_perfil_suscripcion_claro: Suscripción Claro video
+
+# asserts de page login login
+lbl_inicia_ses_login: Inicia sesión
+lbl_email_login: Correo electrónico
+lbl_pass_login: Contraseña
+lbl_nuevo_login: ¿Nuevo en Claro video?
+
+# asserts de page de la pagina de metodos de pago, despues de hacer login con usuarios registrados
+lbl_select_plan: Selecciona tu plan
+lbl_select_payment: Selecciona tu medio de pago
+lbl_telmex_payment: Recibo Telmex o Telnor
+lbl_telcel_payment: Telcel
+lbl_tdc_payment: Tarjeta de crédito
+lbl_cp: Código promocional
+lbl_skip_step: Saltar este paso
+lbl_sus_men: Suscríbete Mensual $ 69
+
+# Labels de content page
+btn_sus_mensual: Suscríbete Mensual
+btn_rent24: Renta 24hs
+btn_rent48: Renta 48hs
+btn_purchase: Compra
+lbl_download: Con Descarga
+btn_rent_vivo: Renta Evento en vivo
+
+
+
+lbl_recomend: Otras personas que vieron este contenido, también vieron
+lbl_chap_compra: COMPRA
+lbl_chap_rent: RENTA
+lbl_chap_sus: SUSCRÍBETE
+
+lbl_subtitulada: Subtitulada
+lbl_doblada: Doblada
+lbl_direct: Director
+lbl_act: Actor
+lbl_gen: Género
+lbl_titu: Título
+lbl_mail: e-mail
+lbl_compartir: Compartir
+lbl_trailer: Ver trailer
+lbl_ver_linea: Ver en Línea
+lbl_recomend2: 'Otras personas que vieron este contenido, también vieron:'
+
+lbl_ver_ahora: ver ahora
+
+lbl_pin_off: Recuerda que puedes proteger tus pagos configurando un PIN desde Mi Cuenta.
+lbl_mi_list: Mi Lista
+btn_play: ver ahora
+btn_trailer: Ver trailer
+
+# labels para hacer el Assert de la page de registro despues de dar click en una ficha tecnica en suscribete mensual
+lbl_ing_datos: Ingresa tus datos
+lbl_correo: Correo electrónico
+lbl_rep_correo: Repetir correo electrónico
+lbl_pass: Contraseña
+lbl_rep_pass: Repetir contraseña
+lbl_nombre: Nombre
+lbl_apellido: Apellido
+lbl_tem_condiciones: Términos y Condiciones
+lbl_btn_siguiente: Siguiente
+# labels para mensaje de exito de suscripción
+lbl_mns_exito_sus: Tu operación fue exitosa.
+btn_aceptar: Aceptar
+
+# payment
+btn_payment_tel_fija: Recibo Telmex o Telnor
+btn_payment_tel_movil: Telcel
+btn_payment_tc: Tarjeta de crédito
+btn_payment_codigo_promo: Código promocional
+btn_payment_volver: Volver
+btn_payment_siguiente: Siguiente
+lbl_payment_codigo_promo_invalido: ¡Ouch! El código promocional ingresado no existe. ¿Tienes otro? ¡Ingrésalo!
+lbl_payment_codigo_promo_usado: ¡Ouch! El código promocional ingresado ya fue usado
+lbl_payment_renta24_exitosa: Tu renta ha sido exitosa
+lbl_payment_renta48_exitosa: Tu renta fue exitosa
+lbl_payment_compra_exitosa: Tu compra fue exitosa
+lbl_payment_live_ppe_exitosa: Podrás disfrutar el evento en cuanto comience su transmisión en vivo.
+lbl_payment_ver_renta_compra: Ver
+lbl_payment_tc_cvv_incorrecto: Lo sentimos, por el momento no podemos atender tu solicitud
+
+
+
+
+# datos otros métodos de pago
+val_payment_tel_numero_fijo: 5512345678
+val_payment_tel_numero_movil: 5512345678
+val_payment_codigo_promo_valido: 123456789012345678901
+val_payment_codigo_promo_used: 123456789012345678901
+val_payment_codigo_promo_invalid: 123456789012345678901
+
+# labels control parental
+dl_cp_viewer_titulo: Contenido Bloqueado por el Control Parental
+dl_cp_lbl_pin_incorrecto: Pin incorrecto, inténtalo nuevamente
+
+# labels player
+dl_play_temporada_cambiar: Temporada 01
+dl_play_episodio_cambiar: Temporada 01

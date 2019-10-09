@@ -1,0 +1,119 @@
+# config/data_users.yml
+## YAML Template
+
+#ECUADOR
+# TEXTOS HOME CD
+CV: Claro video
+CM: Claro música
+CS: Claro shop
+descubre: Descubre
+comparte: Comparte
+respalda: Respalda
+descarga: Descarga
+opciones: Opciones
+planes: planes
+fq: Preguntas frecuentes
+email: Correo electrónico
+terms: Términos y condiciones y
+register: Regístrate
+login: Inicia sesión
+promo: ¡USA TUS 15GB SIN COSTO!
+login_button: INICIA SESIÓN
+50gb: 50GB
+150gb: 150GB
+1024gb: 1024GB
+
+#TEXTOS CONGRATULATIONS PAGE
+congratulations: ¡Felicidades!
+continue_button: CONTINUAR
+#TEXTOS HIJACK PAGE
+hijack_menssage: Esta cuenta ya fue registrada con tus datos de
+terms_and_conditions: Términos y condiciones y la Política de privacidad
+#TEXTOS LOGIN EMAIL
+forgot_password: ¿OLVIDASTE TU CONTRASEÑA?
+login_email_register: REGÍSTRATE
+#TEXTOS LOGIN TELCEL
+forgot_password_telcel: ¿OLVIDASTE TU CONTRASEÑA?
+#TEXTOS LOGIN TELmex
+forgot_password_telmex: ¿OLVIDASTE TU CONTRASEÑA?
+number_nil: ''
+#TEXTOS POPUP
+your_files: Tus archivos contigo, siempre.
+download_app: Descarga la app
+terms_popup: Términos y política de privacidad
+#TEXTOS RECOVERY
+recover_inst: Recibirás una liga con las instrucciones para recuperar tu contraseña.
+back_to_index: VOLVER A INICIO
+volver: VOLVER
+#TEXTOS REGISTRATION PAGE EMAIL
+iam_user: YA SOY USUARIO
+terms_reg_email: Términos y condiciones y la Política de privacidad
+#TEXTOS REGISTRATION PAGE TELCEL
+iam_user_telcel: YA SOY USUARIO
+terms_reg_telcel: Términos y condiciones y la Política de privacidad
+#TEXTOS REGISTRATION PAGE TELCEL
+iam_user_telmex: YA SOY USUARIO
+terms_reg_telmex: Términos y condiciones y la Política de privacidad
+invalid_number_telmex: Tu usuario fue registrado, pero ocurrió un error al asignar tu suscripción. Favor de intentar hacer un login con tus credenciales más tarde.
+another_number_telmex: El teléfono registrado no es una Línea Telmex [COD.01]
+number_debt: La línea presenta adeudo. [COD.02]
+#TEXTOS CLARO MUSICA
+listen_free: Escucha gratis
+#TEXTOS CLARO VIDEO
+save: Guardar
+login_video: Ingresar
+#TEXTOS CLARO MOVIL
+iam_user_claromovil: YA SOY USUARIO
+terms_reg_claromovil: Términos y condiciones y Política de privacidad
+text_btregist_claromovil: Regístrate con tu número Claro Móvil
+checkbox_text_claromovil: Al registrarte estás aceptando los Términos y condiciones y la Política de privacidad
+text_button_claromovil: REGISTRARME
+
+
+
+
+
+
+
+
+# series
+catalog_serie: 'Marvel Anime: X'
+ppe_serie: x
+est_serie: Lost
+free_serie: La Hermandad
+estppe_serie: Paranormal Witness
+freeest_serie: bully magnets
+
+# movies
+catalog_movie: Serenata Nostalgica
+ppe_movie: Vaselina
+est_movie: Lost
+free_movie: Negocios de guerra
+estppe_movie: Serena #Marble Hornets
+freeest_movie: 13
+#estppe_movie: Serena
+
+# contents with parental control
+free_movie_cp: Negocios de Guerra
+free_serie_cp: Prison Break
+catalog_movie_cp: El avispon verde
+catalog_serie_cp: Glee
+ppe_movie_cp: Vaselina
+est_serie_cp: Lost
+estppe_movie_cp: El nuevo entrenador
+freeest_serie_cp: La Hermandad
+
+# contents without parental control
+free_movie_ncp: The Dogfather
+free_serie_ncp: The Good Wife
+catalog_movie_ncp: Encantada #Mi villano favorito
+catalog_serie_ncp: Pan Am
+ppe_movie_ncp: Moana
+est_serie_ncp: Once Upon a Time 2012
+estppe_movie_ncp: Mi mascota Cleo #El americano
+freeest_serie_ncp: Bully Magnets
+
+content_ppelive: 749780
+
+fox_serie: Medici
+fox_movie: Marmaduke

@@ -1,0 +1,34 @@
+# config/cucumber.yml
+## YAML Template
+
+################################################################################################################
+#	VARIABLES																						     	   #
+################################################################################################################
+usr: test.claro@gmail.com
+#message_user_fail: "La longitud del nombre de usuario no debe ser inferior a 5 caracteres"
+###--- selenium / phantom /chromedriver
+driver: phantom
+# LIVE or STAGE
+environment: LIVE
+# Iterator Run Test Fail
+rerun: 2
+
+edge_prod: --tags @edge TAG=edge BROWSER=edge ENVIRONMENT=PROD COUNTRY=mx
+edge_test: --tags @edge TAG=edge BROWSER=edge ENVIRONMENT=TEST COUNTRY=mx
+ie_prod: --tags @ie TAG=ie BROWSER=ie ENVIRONMENT=PROD COUNTRY=mx
+ie_test: --tags @ie TAG=ie BROWSER=ie ENVIRONMENT=TEST COUNTRY=mx
+
+web-0: --tags @<%=ENV['TAG'].to_s.downcase%> BROWSER=<%=ENV['BROW'].to_s.downcase%> ENVIRONMENT=<%=ENV['ENVIRON'].to_s%> COUNTRY=<%=ENV['COUNT'].to_s%>
+
+
+telmex: --tags @<%=ENV['TAG'].to_s.downcase%> BROWSER=<%=ENV['BROW'].to_s.downcase%> ENVIRONMENT=<%=ENV['ENVIRON'].to_s%> COUNTRY=<%=ENV['COUNT'].to_s%>
+telcel: --tags @<%=ENV['TAG'].to_s.downcase%> BROWSER=<%=ENV['BROW'].to_s.downcase%> ENVIRONMENT=<%=ENV['ENVIRON'].to_s%> COUNTRY=<%=ENV['COUNT'].to_s%>
+video: --tags @<%=ENV['TAG'].to_s.downcase%> BROWSER=<%=ENV['BROW'].to_s.downcase%> ENVIRONMENT=<%=ENV['ENVIRON'].to_s%> COUNTRY=<%=ENV['COUNT'].to_s%>
+musica: --tags @<%=ENV['TAG'].to_s.downcase%> BROWSER=<%=ENV['BROW'].to_s.downcase%> ENVIRONMENT=<%=ENV['ENVIRON'].to_s%> COUNTRY=<%=ENV['COUNT'].to_s%>
+email: --tags @<%=ENV['TAG'].to_s.downcase%> BROWSER=<%=ENV['BROW'].to_s.downcase%> ENVIRONMENT=<%=ENV['ENVIRON'].to_s%> COUNTRY=<%=ENV['COUNT'].to_s%>
+
+#-f pretty -f html --out reports/<%=Time.now.strftime('%F')%>/<%=ENV['ENVIRON'].to_s.downcase%>/<%=Time.now.strftime("%H%M%S")%>-<%=ENV['BROW'].to_s.downcase%>-<%=ENV['ENVIRON'].to_s.downcase%>-<%=ENV['COUNT'].to_s.downcase%>-sus-monitoreo.html -f pretty -f json -o json/<%=ENV['BROW'].to_s.downcase%>-<%=ENV['ENVIRON'].to_s.downcase%>-<%=ENV['COUNT'].to_s.downcase%>-priority_0.json
+web-1: --tags @<%=ENV['TAG'].to_s.downcase%> BROWSER=<%=ENV['BROW'].to_s.downcase%> ENVIRONMENT=<%=ENV['ENVIRON'].to_s%> COUNTRY=<%=ENV['COUNT'].to_s%> -f pretty -f html --out reports/<%=Time.now.strftime('%F')%>/<%=ENV['ENVIRON'].to_s.downcase%>/<%=Time.now.strftime("%H%M%S")%>-<%=ENV['BROW'].to_s.downcase%>-<%=ENV['ENVIRON'].to_s.downcase%>-<%=ENV['COUNT'].to_s.downcase%>-sus-monitoreo.html -f pretty -f json -o json/<%=ENV['BROW'].to_s.downcase%>-<%=ENV['ENVIRON'].to_s.downcase%>-<%=ENV['COUNT'].to_s.downcase%>-priority_1.json
+web-2: --tags @<%=ENV['TAG'].to_s.downcase%> BROWSER=<%=ENV['BROW'].to_s.downcase%> ENVIRONMENT=<%=ENV['ENVIRON'].to_s%> COUNTRY=<%=ENV['COUNT'].to_s%> -f pretty -f html --out reports/<%=Time.now.strftime('%F')%>/<%=ENV['ENVIRON'].to_s.downcase%>/<%=Time.now.strftime("%H%M%S")%>-<%=ENV['BROW'].to_s.downcase%>-<%=ENV['ENVIRON'].to_s.downcase%>-<%=ENV['COUNT'].to_s.downcase%>-sus-monitoreo.html -f pretty -f json -o json/<%=ENV['BROW'].to_s.downcase%>-<%=ENV['ENVIRON'].to_s.downcase%>-<%=ENV['COUNT'].to_s.downcase%>-priority_2.json
+
+
