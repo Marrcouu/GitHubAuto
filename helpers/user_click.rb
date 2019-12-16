@@ -56,7 +56,8 @@ class HelperUser
           :'video uploaded'=>{elem1:{metodo:'find',tag: :css,etiqueta:'tr[data-file="carga mp4.mp4"]', wait:30}},
           :'te compartieron'=>{elem1:{metodo:'find',tag: :css,etiqueta:'tr[data-file="Archivo compartido.txt"]', wait:30}},
           :'compartiste'=>{elem1:{metodo:'find',tag: :css,etiqueta:'div.thumbnail', wait:30}},
-          :'invitation canceled'=>{elem1:{metodo:'find',tag: :xpath,etiqueta:'//*[@id="FP_GuestList"]/app-member[2]/div/div[3]', wait:30}}
+          :'invitation canceled'=>{elem1:{metodo:'find',tag: :xpath,etiqueta:'//*[@id="FP_GuestList"]/app-member[2]/div/div[3]', wait:30}},
+          :'TSA'=>{elem1:{metodo:'find',tag: :css,etiqueta:'div.modal-wrapper', wait:30}}
       },
       :'forms home' => {
           :'name folder' => {send:{metodo:'find',tag: :css,etiqueta:'input[type="text"]',wait:10,creden: :name},

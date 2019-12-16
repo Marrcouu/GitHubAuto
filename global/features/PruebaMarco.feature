@@ -1,61 +1,209 @@
 Feature: Tests
   Validate of all elements in the Test Section
 
-  @p0 @mx @email @chrome @mozilla @safari
-  Scenario: Validate the correctly share to element for email to user don´t register in claro drive
-    Given I am an "registered" user
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country options in the header
+    Given The Landing page
     When I open the app
-    And I logout if a session is started
-    And I click on "login" button from "home" page
-    Then I should see "partners" page
-    And I click on "email" partner option
-    Then I should see "login email" page
-    And I enter "75" in partner "email" - smoke
-    And I click on "next" button from "login email" page
-    And I click on "share" button from "user" page
-    And I enter "target email" in "home" page
-    And I click on "sharing confirm" button from "user" page
-    And I wait "5"
-    Then I should see "target email" element
-    And I stop sharing for "email"
-    And I logout
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Country" link in the "Claro drive" landing
+    Then I should see the "Colombia" page
 
-  @p0 @mx @email @chrome @mozilla @safari
-  Scenario: Validate the correctly share to element for email to user register in claro drive
-    Given I am an "registered" user
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country options in the header
+    Given The Landing page
     When I open the app
-    And I logout if a session is started
-    And I click on "login" button from "home" page
-    Then I should see "partners" page
-    And I click on "email" partner option
-    Then I should see "login email" page
-    And I enter "75" in partner "email" - smoke
-    And I click on "next" button from "login email" page
-    And I click on "share" button from "user" page
-    And I enter "target user email" in "home" page
-    And I click on "sharing confirm" button from "user" page
-    And I wait "5"
-    Then I should see "target user email" element
-    And I stop sharing for "email"
-    And I logout
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Brasil" link in the "Claro drive" landing
+    Then I should see the "Brasil" page
 
-  @p0 @mx @email @chrome @mozilla
-  Scenario: Validate the correctly share to element for link
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country options in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Guatemala" link in the "Claro drive" landing
+    Then I should see the "Guatemala" page
+
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country options in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Honduras" link in the "Claro drive" landing
+    Then I should see the "Honduras" page
+
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country options in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Nicaragua" link in the "Claro drive" landing
+    Then I should see the "Nicaragua" page
+
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country options in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "El Salvador" link in the "Claro drive" landing
+    Then I should see the "El Salvador" page
+
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country options in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Costa Rica" link in the "Claro drive" landing
+    Then I should see the "Costa Rica" page
+
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country options in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Peru" link in the "Claro drive" landing
+    Then I should see the "Peru" page
+
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country options in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Argentina" link in the "Claro drive" landing
+    Then I should see the "Argentina" page
+
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country options in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Panama" link in the "Claro drive" landing
+    Then I should see the "Panama" page
+
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country options in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Chile" link in the "Claro drive" landing
+    Then I should see the "Chile" page
+
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country options in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Ecuador" link in the "Claro drive" landing
+    Then I should see the "Ecuador" page
+
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country options in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Puerto Rico" link in the "Claro drive" landing
+    Then I should see the "Puerto Rico" page
+
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country options in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Republica Dominicana" link in the "Claro drive" landing
+    Then I should see the "Republica Dominicana" page
+
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country options in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Uruguay" link in the "Claro drive" landing
+    Then I should see the "Uruguay" page
+
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country options in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Paraguay" link in the "Claro drive" landing
+    Then I should see the "Paraguay" page
+
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the correct function of delete and restore of a file
     Given I am an "registered" user
     When I open the app
     And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "telmex" partner option
+    Then I should see "login telmex" page
+    And I enter "25" in partner "telmex" - smoke
+    And I click on "next" button from "login telmex" page
+    And I wait "20"
+    Then I should see "TSA" element
+
+    #DOWNLOAD CONTACTS
+  @email @chrome @mozilla @safari
+  Scenario: Validate download contacts in pdf, csv and vcf
+    Given I am an "registered" user
+    When I open the app
+    #And I logout
+    And I logout if a session is started
+    #Then I should see "home" page
     And I click on "login" button from "home" page
     Then I should see "partners" page
     And I click on "email" partner option
     Then I should see "login email" page
     And I enter "75" in partner "email" - smoke
     And I click on "next" button from "login email" page
-    And I click on "share" button from "user" page
-    And I click on "config link" button from "user" page
-    And I click on "close" button from "user" page
-    Then I should see "file shared for link" element
-    And I stop sharing for "link"
-    And I logout
+    And I click on "contacts" button from "user" page
+    Then I should see "contacts" element
+    Then I should see "contacts label" element
+    Then I should see "name label" element
+    Then I should see "phone label" element
+    Then I should see "email label" element
+    Then I should see "last update label" element
+    And I click on "first contact" button from "user" page
+    And I click on "filter" button from "user" page
+    And I download element "contacts in pdf"
+    And I download element "contacts in vcf"
+    And I download element "contacts in csv"
+    Then I logout
+
+  #-------------------------------------------------------------------------------
 
 
 
@@ -324,153 +472,10 @@ Feature: Tests
     Then I should see "target user email" element
     And I stop sharing for "email"
 
-    ########## Partner Correo ##########
-
- # @p0 @mx @video @chrome @mozilla @safari
-  Scenario: Validate details for image, music, video and txt in recent
-    Given I am an "registered" user
-    When I open the app
-    And I logout if a session is started
-    And I click on "login" button from "home" page
-    Then I should see "partners" page
-    And I click on "email" partner option
-    Then I should see "login email" page
-    And I enter "75" in partner "email" - smoke
-    And I click on "next" button from "login email" page
-    And I click on "recent" button from "user" page
-    Then I should do all functions for "image" element
-    And I click on "close file" button from "user" page
-    And I download a file "jpg"
-    Then I should see "jpg" file downloaded
-    Then I should do all functions for "music" element
-    And I click on "close file" button from "user" page
-    And I download a file "mp3"
-    Then I should see "mp3" file downloaded
-    Then I should do all functions for "video" element
-    And I click on "close file" button from "user" page
-    And I download a file "mp4"
-    Then I should see "mp4" file downloaded
-    Then I should do all functions for "txt" element
-    And I click on "close file" button from "user" page
-    And I download a file "txt"
-    Then I should see "txt" file downloaded
-    And  I logout
-
- # @p0 @mx @video @chrome @mozilla @safari
-  Scenario: Validate details for image, music, video and txt in all files
-    Given I am an "registered" user
-    When I open the app
-    And I logout if a session is started
-    And I click on "login" button from "home" page
-    Then I should see "partners" page
-    And I click on "email" partner option
-    Then I should see "login email" page
-    And I enter "75" in partner "email" - smoke
-    And I click on "next" button from "login email" page
-    Then I should do all functions for "carpet2" element
-    And I click on "close file" button from "user" page
-    And I download a file "carpet2"
-    Then I should see "carpet" file downloaded
-    Then I should do all functions for "image2" element
-    And I click on "close file" button from "user" page
-    And I download a file "jpg2"
-    Then I should see "jpg" file downloaded
-    Then I should do all functions for "music2" element
-    And I click on "close file" button from "user" page
-    And I download a file "mp32"
-    Then I should see "mp3" file downloaded
-    Then I should do all functions for "video2" element
-    And I click on "close file" button from "user" page
-    And I download a file "mp42"
-    Then I should see "mp4" file downloaded
-    Then I should do all functions for "txt2" element
-    And I click on "close file" button from "user" page
-    And I download a file "txt2"
-    Then I should see "txt" file downloaded
-    And  I logout
-
-
- # @p0 @mx @video @chrome @mozilla @safari
-  Scenario: Validate details for carpet, image, music, video and txt in favorites
-    Given I am an "registered" user
-    When I open the app
-    And I logout if a session is started
-    And I click on "login" button from "home" page
-    Then I should see "partners" page
-    And I click on "email" partner option
-    Then I should see "login email" page
-    And I enter "75" in partner "email" - smoke
-    And I click on "next" button from "login email" page
-    And I click on "favorites" button from "user" page
-    Then I should do all functions for "carpet2" element
-    And I click on "close file" button from "user" page
-    And I download a file "carpet2"
-    Then I should see "carpet" file downloaded
-    Then I should do all functions for "image2" element
-    And I click on "close file" button from "user" page
-    And I download a file "jpg2"
-    Then I should see "jpg" file downloaded
-    Then I should do all functions for "music2" element
-    And I click on "close file" button from "user" page
-    And I download a file "mp32"
-    Then I should see "mp3" file downloaded
-    Then I should do all functions for "video2" element
-    And I click on "close file" button from "user" page
-    And I download a file "mp42"
-    Then I should see "mp4" file downloaded
-    Then I should do all functions for "txt2" element
-    And I click on "close file" button from "user" page
-    And I download a file "txt2"
-    Then I should see "txt" file downloaded
-    And  I logout
-
-
-  @chrome @mozilla @edge @ie @safari
-  #Registro 75GB
-  Scenario: Validate the configuration user section
-    Given I am an "registered" user
-    When I open the app
-    And I logout if a session is started
-    And I click on "login" button from "home" page
-    Then I should see "partners" page
-    And I click on "email" partner option
-    Then I should see "login email" page
-    And I enter "75" in partner "email" - smoke
-    And I click on "next" button from "login email" page
-    And I click on "configuration" button from "user" page
-    #Then I should see "config user" page
-    #And I click on "information" button from "config user" page
-    #And I change profile picture
-    #And I erase the profile picture
-    #And I enter "new name" in "home" page
-    #Then I should see "new name" element
-    And I click on "security" button from "config user" page
-    And I click on "close sesion" button from "config user" page
-    And I click on "activity" button from "user" page
-    Then I should see "Option Created" element
-    Then I should see "Option Renamed" element
-    Then I should see "Option Favorite Files" element
-    Then I should see "Option Deleted" element
-    Then I should see "Option Restored" element
-    Then I should see "Option Favorites" element
-    Then I should see "Option Shared" element
-    Then I should see "Option Other Server" element
-    Then I should see "Option Download" element
-    Then I should see "Option Comments" element
-    Then I should see "Option Labels" element
-    And I click on "additional config" button from "config user" page
-    And  I logout
-
-    #Then I should see "Created folder" element
-    #Then I should see "Created file" element
-    #Then I should see "Rename folder" element
-    #Then I should see "Rename file" element
-
-
   #----------------------------------------------------------------------------------------
 
-  @p0 @mx @video @chrome @mozilla @safari
-  Scenario: Validate details for image, music, video and txt in recent
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the correct function of delete and restore of a file
     Given I am an "registered" user
     When I open the app
     And I logout if a session is started
@@ -480,30 +485,67 @@ Feature: Tests
     Then I should see "login email" page
     And I enter "75" in partner "email" - smoke
     And I click on "next" button from "login email" page
-    And I delete "image"
-    And I wait "5"
-    And I delete "music"
-    And I wait "5"
-    And I delete "video"
-    And I wait "5"
-    And I delete "txt"
-    And I wait "5"
-    And I delete "carpet"
-    And I wait "5"
-    And I delete "file"
-    And I wait "5"
-    And I delete "pic1"
-    And I wait "5"
-    And I delete "pic2"
-    And I wait "5"
-    And I delete "pic3"
-    And I wait "5"
-    And I delete "pic4"
-    And I wait "5"
-    And I delete "pic5"
-    And I wait "5"
-    And I click on "garbage" button from "user" page
-    And I click on "delete files" button from "user" page
+    And I click on "move audio" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "Carpeta Automatizacion" button from "user" page
+    Then I should see "audio" element
+    And  I logout
+
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the correct function of delete and restore of a file
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "move video" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "Carpeta Automatizacion" button from "user" page
+    Then I should see "video" element
+    And  I logout
+
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the correct function of delete and restore of a file
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "move txt" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "Carpeta Automatizacion" button from "user" page
+    Then I should see "txt" element
+    And  I logout
+
+  #@p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the link of Claro video in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Data Security" link in the "Claro drive" landing
+    When I make click on this "Data Security" link in the "Claro drive" landing
+    Then I should see the "Data Security" page
+
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the correct function of delete and restore of a file
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "search" button from "user" page
+    Then I should see "pdfs" element
     And  I logout
 
   @p0 @mx @chrome @mozilla
@@ -523,115 +565,9 @@ Feature: Tests
     Then I logout
     And I clean "new user telmex" from partner "telmex" for "email" in the app "drive"
 
-
-
-
-
-
-  @p0 @mx @video @chrome @mozilla @safari
-  Scenario: Validate details for image, music, video and txt in recent
-    Given I am an "registered" user
-    When I open the app
-    And I logout if a session is started
-    And I click on "login" button from "home" page
-    Then I should see "partners" page
-    And I click on "email" partner option
-    Then I should see "login email" page
-    And I enter "75" in partner "email" - smoke
-    And I click on "next" button from "login email" page
-    And I click on "images" button from "user" page
-    Then I should do all functions for "image2" element
-    And I click on "close file" button from "user" page
-    And I download a file "jpg2"
-    Then I should see "jpg" file downloaded
-    And  I logout
-
-  @p0 @mx @video @chrome @mozilla @safari
-  Scenario: Validate details for image, music, video and txt in recent
-    Given I am an "registered" user
-    When I open the app
-    And I logout if a session is started
-    And I click on "login" button from "home" page
-    Then I should see "partners" page
-    And I click on "email" partner option
-    Then I should see "login email" page
-    And I enter "75" in partner "email" - smoke
-    And I click on "next" button from "login email" page
-    And I click on "videos" button from "user" page
-    Then I should do all functions for "video2" element
-    And I click on "close file" button from "user" page
-    And I download a file "mp42"
-    Then I should see "mp4" file downloaded
-    And  I logout
-
   @p0 @mx @email @chrome @mozilla @safari @edge @ie
-  Scenario: Validate the correct function of delete and restore of a file
+  Scenario: Validar el funcionamiento del despliegue de países (Brasil)
     Given I am an "registered" user
     When I open the app
-    And I logout if a session is started
-    And I click on "login" button from "home" page
-    Then I should see "partners" page
-    And I click on "email" partner option
-    Then I should see "login email" page
-    And I enter "75" in partner "email" - smoke
-    And I click on "next" button from "login email" page
-    And I click on "delete video" button from "user" page
-    And I click on "garbage" button from "user" page
-    And I click on "restore video" button from "user" page
-    And I click on "home" button from "user" page
-    Then I should see "video" element
-    And I logout
 
-  @p0 @mx @email @chrome @mozilla @safari @edge @ie
-  Scenario: Validate the correct function of delete and restore of a file
-    Given I am an "registered" user
-    When I open the app
-    And I logout if a session is started
-    And I click on "login" button from "home" page
-    Then I should see "partners" page
-    And I click on "email" partner option
-    Then I should see "login email" page
-    And I enter "75" in partner "email" - smoke
-    And I click on "next" button from "login email" page
-    And I click on "delete audio" button from "user" page
-    And I click on "garbage" button from "user" page
-    And I click on "restore audio" button from "user" page
-    And I click on "home" button from "user" page
-    Then I should see "audio" element
-    And I logout
 
-  @p0 @mx @email @chrome @mozilla @safari @edge @ie
-  Scenario: Validate the correct function of delete and restore of a file
-    Given I am an "registered" user
-    When I open the app
-    And I logout if a session is started
-    And I click on "login" button from "home" page
-    Then I should see "partners" page
-    And I click on "email" partner option
-    Then I should see "login email" page
-    And I enter "75" in partner "email" - smoke
-    And I click on "next" button from "login email" page
-    And I click on "delete image" button from "user" page
-    And I click on "garbage" button from "user" page
-    And I click on "restore image" button from "user" page
-    And I click on "home" button from "user" page
-    Then I should see "image" element
-    And I logout
-
-  @p0 @mx @email @chrome @mozilla @safari @edge @ie
-  Scenario: Validate the correct function of delete and restore of a file
-    Given I am an "registered" user
-    When I open the app
-    And I logout if a session is started
-    And I click on "login" button from "home" page
-    Then I should see "partners" page
-    And I click on "email" partner option
-    Then I should see "login email" page
-    And I enter "75" in partner "email" - smoke
-    And I click on "next" button from "login email" page
-    And I click on "delete text" button from "user" page
-    And I click on "garbage" button from "user" page
-    And I click on "restore text" button from "user" page
-    And I click on "home" button from "user" page
-    Then I should see "text" element
-    And I logout

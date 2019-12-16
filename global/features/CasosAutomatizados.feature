@@ -226,6 +226,14 @@ Feature:
     When I make click on this "Descarga la app" link in the "Claro drive" landing
     Then I should see the "Descarga la app" page
 
+  #@p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate PCI Data Security Standard Certificate
+    Given The Landing page
+    When I open the app
+    And I should see the "Data Security" link in the "Claro drive" landing
+    When I make click on this "Data Security" link in the "Claro drive" landing
+    Then I should see the "Data Security" page
+
     # Claro drive Negocio
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Negocio of the Claro drive
@@ -667,6 +675,78 @@ Feature:
     Then I should see "txt" file
     And  I logout
 
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the correct function of delete and restore of a image
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "delete image" button from "user" page
+    And I click on "garbage" button from "user" page
+    And I click on "restore image" button from "user" page
+    And I click on "home" button from "user" page
+    Then I should see "image" element
+    And I logout
+
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the correct function of delete and restore of a video
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "delete video" button from "user" page
+    And I click on "garbage" button from "user" page
+    And I click on "restore video" button from "user" page
+    And I click on "home" button from "user" page
+    Then I should see "video" element
+    And I logout
+
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the correct function of delete and restore of a audio
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "delete audio" button from "user" page
+    And I click on "garbage" button from "user" page
+    And I click on "restore audio" button from "user" page
+    And I click on "home" button from "user" page
+    Then I should see "audio" element
+    And I logout
+
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the correct function of delete and restore of text
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "delete text" button from "user" page
+    And I click on "garbage" button from "user" page
+    And I click on "restore text" button from "user" page
+    And I click on "home" button from "user" page
+    Then I should see "text" element
+    And I logout
+
   @chrome @mozilla @edge @ie
   Scenario: Validate the add favorite for carpet, image, music, video and txt
     Given I am an "registered" user
@@ -698,23 +778,23 @@ Feature:
     And I click on "next" button from "login email" page
     Then I should do all functions for "carpet2" element
     And I click on "close file" button from "user" page
-    And I download a file "carpet2"
+    And I download element "carpet2"
     Then I should see "carpet" file downloaded
     Then I should do all functions for "image2" element
     And I click on "close file" button from "user" page
-    And I download a file "jpg2"
+    And I download element "jpg2"
     Then I should see "jpg" file downloaded
     Then I should do all functions for "music2" element
     And I click on "close file" button from "user" page
-    And I download a file "mp32"
+    And I download element "mp32"
     Then I should see "mp3" file downloaded
     Then I should do all functions for "video2" element
     And I click on "close file" button from "user" page
-    And I download a file "mp42"
+    And I download element "mp42"
     Then I should see "mp4" file downloaded
     Then I should do all functions for "txt2" element
     And I click on "close file" button from "user" page
-    And I download a file "txt2"
+    And I download element "txt2"
     Then I should see "txt" file downloaded
     And  I logout
 
@@ -732,19 +812,19 @@ Feature:
     And I click on "recent" button from "user" page
     Then I should do all functions for "image" element
     And I click on "close file" button from "user" page
-    And I download a file "jpg"
+    And I download element "jpg"
     Then I should see "jpg" file downloaded
     Then I should do all functions for "music" element
     And I click on "close file" button from "user" page
-    And I download a file "mp3"
+    And I download element "mp3"
     Then I should see "mp3" file downloaded
     Then I should do all functions for "video" element
     And I click on "close file" button from "user" page
-    And I download a file "mp4"
+    And I download element "mp4"
     Then I should see "mp4" file downloaded
     Then I should do all functions for "txt" element
     And I click on "close file" button from "user" page
-    And I download a file "txt"
+    And I download element "txt"
     Then I should see "txt" file downloaded
     And  I logout
 
@@ -762,24 +842,132 @@ Feature:
     And I click on "favorites" button from "user" page
     Then I should do all functions for "carpet2" element
     And I click on "close file" button from "user" page
-    And I download a file "carpet2"
+    And I download element "carpet2"
     Then I should see "carpet" file downloaded
     Then I should do all functions for "image2" element
     And I click on "close file" button from "user" page
-    And I download a file "jpg2"
+    And I download element "jpg2"
     Then I should see "jpg" file downloaded
     Then I should do all functions for "music2" element
     And I click on "close file" button from "user" page
-    And I download a file "mp32"
+    And I download element "mp32"
     Then I should see "mp3" file downloaded
     Then I should do all functions for "video2" element
     And I click on "close file" button from "user" page
-    And I download a file "mp42"
+    And I download element "mp42"
     Then I should see "mp4" file downloaded
     Then I should do all functions for "txt2" element
     And I click on "close file" button from "user" page
-    And I download a file "txt2"
+    And I download element "txt2"
     Then I should see "txt" file downloaded
+    And  I logout
+
+  @p0 @mx @video @chrome @mozilla @safari
+  Scenario: Validate details for images in images section
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "images" button from "user" page
+    Then I should do all functions for "image2" element
+    And I click on "close file" button from "user" page
+    And I download element "jpg2"
+    Then I should see "jpg" file downloaded
+    And  I logout
+
+  @p0 @mx @video @chrome @mozilla @safari
+  Scenario: Validate details for videos in videos section
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "videos" button from "user" page
+    Then I should do all functions for "video2" element
+    And I click on "close file" button from "user" page
+    And I download element "mp42"
+    Then I should see "mp4" file downloaded
+    And  I logout
+
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the correct function of delete and restore of a file
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "rename image" button from "user" page
+    And  I logout
+
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the correct function of delete and restore of a file
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "rename video" button from "user" page
+    And  I logout
+
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the correct function of delete and restore of a file
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "rename music" button from "user" page
+    And  I logout
+
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the correct function of delete and restore of a file
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "rename txt" button from "user" page
+    And  I logout
+
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the correct function of delete and restore of a file
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "move image" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "Carpeta Automatizacion" button from "user" page
+    Then I should see "image" element
     And  I logout
 
   @p0 @mx @email @chrome @mozilla @safari
@@ -829,6 +1017,43 @@ Feature:
     Then I should see "Option Comments" element
     Then I should see "Option Labels" element
     And I click on "additional config" button from "config user" page
+    And  I logout
+
+  @p0 @mx @video @chrome @mozilla @safari
+  Scenario: Validate delete to all files
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    #And I delete "image"
+    #And I wait "5"
+    And I delete "music"
+    And I wait "5"
+    And I delete "video"
+    And I wait "5"
+    And I delete "txt"
+    And I wait "5"
+    And I delete "carpet"
+    And I wait "5"
+    And I delete "file"
+    And I wait "5"
+    And I delete "pic1"
+    And I wait "5"
+    And I delete "pic2"
+    And I wait "5"
+    And I delete "pic3"
+    And I wait "5"
+    And I delete "pic4"
+    And I wait "5"
+    And I delete "pic5"
+    And I wait "5"
+    And I click on "garbage" button from "user" page
+    And I click on "delete files" button from "user" page
     And  I logout
 
    #FOR REGISTRATION AND SUBSCRIPTION
@@ -908,7 +1133,7 @@ Feature:
     And I click on "listen free" button from "claro musica" app
     And I enter "correct user" in "claro musica"
     And I click on "accept" button from "claro musica" app
-    And I wait "10"
+    And I wait "30"
     And I "confirm" the user in "claro musica"
     And I close tab
   #Scenario: Login
@@ -955,9 +1180,9 @@ Feature:
     Then I should see "popup" page
     And I click on "close" button from "popup" page
 
-  #DOWNLOAD CONTACT IN PDF, CSV, VCF
-   @email @chrome @mozilla @safari
-  Scenario: change tabs in safari
+  #DOWNLOAD CONTACTS
+  @email @chrome @mozilla @safari
+  Scenario: Validate download contacts in pdf, csv and vcf
     Given I am an "registered" user
     When I open the app
     #And I logout
@@ -971,12 +1196,16 @@ Feature:
     And I click on "next" button from "login email" page
     And I click on "contacts" button from "user" page
     Then I should see "contacts" element
-    And I download a file "contact-pdf"
-    And I download a file "contact-csv"
-    And I download a file "contact-vcf"
-    Then I should see "contact-pdf" file downloaded
-    Then I should see "contact-csv" file downloaded
-    Then I should see "contact-vcf" file downloaded
+    Then I should see "contacts label" element
+    Then I should see "name label" element
+    Then I should see "phone label" element
+    Then I should see "email label" element
+    Then I should see "last update label" element
+    And I click on "first contact" button from "user" page
+    And I click on "filter" button from "user" page
+    And I download element "contacts in pdf"
+    And I download element "contacts in vcf"
+    And I download element "contacts in csv"
     Then I logout
 
   #START SESSION
@@ -1053,3 +1282,17 @@ Feature:
     And I click on "next" button from "login claro video" page
     And I get the time used to login on "claro video" partner
     And  I logout
+
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the correct function of delete and restore of a file
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "telmex" partner option
+    Then I should see "login telmex" page
+    And I enter "25" in partner "telmex" - smoke
+    And I click on "next" button from "login telmex" page
+    And I wait "20"
+    Then I should see "TSA" element

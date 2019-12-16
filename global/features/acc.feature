@@ -1,6 +1,8 @@
 Feature: Seleccionar foto de perfil desde Claro drive.
 
-  v
+  @email @chrome @mozilla @safari @edge @ie
+  Scenario: Login as registered user with email and payment method credit card
+    Given I am an "registered" user
    # And I click on "list view" button from "user" page
     Then I should see "contacts" element
     And I click on "share contact" button from "user" page

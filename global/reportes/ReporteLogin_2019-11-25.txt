@@ -1,0 +1,21 @@
+Navegador: mozilla - Hora: 12:35  - Ambiente: TEST
+	Partner: correo - > 7.139952 seg
+
+Navegador: mozilla - Hora: 12:39  - Ambiente: TEST
+	Partner: claro musica - > 10.208786 seg
+
+Navegador: mozilla - Hora: 12:40  - Ambiente: TEST
+	Partner: claro video - > 8.263876 seg
+
+Navegador: chrome - Hora: 12:53  - Ambiente: TEST
+	Partner: correo - > 8.074155 seg
+
+Navegador: chrome - Hora: 12:54  - Ambiente: TEST
+	Partner: telmex - > 8.098257 seg
+
+Navegador: chrome - Hora: 12:54  - Ambiente: TEST
+	Partner: claro musica - > 11.313843 seg
+
+Navegador: chrome - Hora: 12:55  - Ambiente: TEST
+	Partner: claro video - > 9.834607 seg
+

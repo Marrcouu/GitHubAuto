@@ -91,3 +91,7 @@ Then(/^I scroll "([^"]*)"$/) do |option|
     sleep 1
   end
 end
+
+When(/^I make click on this "([^"]*)" link to enter the page$/) do |type|
+  ConfigUserPage.prueba(type)
+end

@@ -88,7 +88,7 @@ class UserPage
       case button.to_sym
       when :'need more space?',:'25gb',:'75gb',:'150gb',:'1024gb',:confirm,:plus,:'sharing confirm',:'config link',
           :personal,:'family space',:confirm, :'close file', :activity, :configuration,
-        :'home',:'te compartieron',:'compartiste', :'start to enjoy'
+        :'home',:'te compartieron',:'compartiste', :'start to enjoy', 'Carpeta '
         @value.each do |key,val|
           Capybara.send(@value[key][:metodo],@value[key][:tag],@value[key][:etiqueta],@value[key][:text], wait:@value[key][:wait]).click if @value[key][:text] != nil
           Capybara.send(@value[key][:metodo],@value[key][:tag],@value[key][:etiqueta],wait:@value[key][:wait])[@value[key][:index]].click if @value[key][:index] != nil
@@ -254,6 +254,94 @@ class UserPage
         ElementExist.element_exist4(contents[:contents][:'name text'],'carga text')
         sleep 5
 
+      when :'rename video'
+        texto = "carga mp4"
+        find(:css, 'div.file-name.list-view', text: texto, wait:20)
+        puts "Se encontro el video".cyan
+        within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+          find(:css,'ul.menu', wait:5).click
+          all(:css, 'div.action-icon', wait:5)[4].click
+          end
+        find(:css, 'input.ng-untouched', wait:10).send_keys "ABCDEFGJIJKLMNOPQRSTUVWXYZ1234567890"
+        find(:css, 'input.ng-untouched', wait:10).send_keys "\ue007"
+        sleep 5
+        texto = "ABCDEFGJIJKLMNOPQRSTUVWXYZ1234567890"
+        find(:css, 'div.file-name.list-view', text: texto, wait:20)
+        puts "Se encontro el video renombrado".cyan
+        within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+          find(:css,'ul.menu', wait:5).click
+          all(:css, 'div.action-icon', wait:5)[4].click
+        end
+        find(:css, 'input.ng-untouched', wait:10).send_keys "carga mp4"
+        find(:css, 'input.ng-untouched', wait:10).send_keys "\ue007"
+        sleep 5
+
+      when :'rename image'
+        texto = "carga jpg"
+        find(:css, 'div.file-name.list-view', text: texto, wait:20)
+        puts "Se encontro la imagen".cyan
+        within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+          find(:css,'ul.menu', wait:5).click
+          all(:css, 'div.action-icon', wait:5)[4].click
+        end
+        find(:css, 'input.ng-untouched', wait:10).send_keys "ABCDEFGJIJKLMNOPQRSTUVWXYZ1234567890"
+        find(:css, 'input.ng-untouched', wait:10).send_keys "\ue007"
+        sleep 3
+        texto = "ABCDEFGJIJKLMNOPQRSTUVWXYZ1234567890"
+        find(:css, 'div.file-name.list-view', text: texto, wait:20)
+        puts "Se encontro la imagen renombrado".cyan
+        within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+          find(:css,'ul.menu', wait:5).click
+          all(:css, 'div.action-icon', wait:5)[4].click
+        end
+        find(:css, 'input.ng-untouched', wait:10).send_keys "carga jpg"
+        find(:css, 'input.ng-untouched', wait:10).send_keys "\ue007"
+        sleep 5
+
+      when :'rename music'
+        texto = "carga mp3"
+        find(:css, 'div.file-name.list-view', text: texto, wait:20)
+        puts "Se encontro el audio".cyan
+        within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+          find(:css,'ul.menu', wait:5).click
+          all(:css, 'div.action-icon', wait:5)[4].click
+        end
+        find(:css, 'input.ng-untouched', wait:10).send_keys "ABCDEFGJIJKLMNOPQRSTUVWXYZ1234567890"
+        find(:css, 'input.ng-untouched', wait:10).send_keys "\ue007"
+        sleep 5
+        texto = "ABCDEFGJIJKLMNOPQRSTUVWXYZ1234567890"
+        find(:css, 'div.file-name.list-view', text: texto, wait:20)
+        puts "Se encontro el audio renombrado".cyan
+        within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+          find(:css,'ul.menu', wait:5).click
+          all(:css, 'div.action-icon', wait:5)[4].click
+        end
+        find(:css, 'input.ng-untouched', wait:10).send_keys "carga mp3"
+        find(:css, 'input.ng-untouched', wait:10).send_keys "\ue007"
+        sleep 5
+
+      when :'rename txt'
+        texto = "carga txt"
+        find(:css, 'div.file-name.list-view', text: texto, wait:20)
+        puts "Se encontro el texto".cyan
+        within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+          find(:css,'ul.menu', wait:5).click
+          all(:css, 'div.action-icon', wait:5)[4].click
+        end
+        find(:css, 'input.ng-untouched', wait:10).send_keys "ABCDEFGJIJKLMNOPQRSTUVWXYZ1234567890"
+        find(:css, 'input.ng-untouched', wait:10).send_keys "\ue007"
+        sleep 5
+        texto = "ABCDEFGJIJKLMNOPQRSTUVWXYZ1234567890"
+        find(:css, 'div.file-name.list-view', text: texto, wait:20)
+        puts "Se encontro el texto renombrado".cyan
+        within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+          find(:css,'ul.menu', wait:5).click
+          all(:css, 'div.action-icon', wait:5)[4].click
+        end
+        find(:css, 'input.ng-untouched', wait:10).send_keys "carga txt"
+        find(:css, 'input.ng-untouched', wait:10).send_keys "\ue007"
+        sleep 5
+
       when :help
         sleep 10
         find(:id, 'expand', wait:30).click
@@ -302,8 +390,6 @@ class UserPage
         find(:css, 'div.canceling-plan', text:'Cancelar plan', wait:30).click #click Cancelar plan
         find(:css, 'a.button.confirm-cancel', text:'Confirmar',wait:30).click #click Confirmar
 
-      when :'recover password'
-
       when :'grid view'
         begin
           gridView = find(:css, 'div.icon.view-toggle', wait:10)
@@ -322,9 +408,12 @@ class UserPage
 
       when :'about claro drive'
         if $env == 'PROD'
-          find(:css, 'a[href="/apps/external/41"]', wait:10).click #Da click en enlace externo 'Legales' en ambiente PROD
+          sleep 10
+          find(:css, 'div.external-link:nth-child(2)', wait:10).click #Da click en enlace externo 'Legales' en ambiente PROD
         else
-          find(:css, 'a[href="/apps/external/48"]', wait:10).click #Da click en enlace externo 'Legales' en ambiente TEST
+          sleep 10
+          find(:css, 'div.external-link:nth-child(2)', wait:10).click #Da click en enlace externo 'Legales' en ambiente TEST
+          #find(:css, 'a[href="/apps/external/48"]', wait:10).click #Da click en enlace externo 'Legales' en ambiente TEST
         end
         within_frame(find(:id, 'ifm', wait:10))do
           find(:css, 'a[href="about"]',text:'Acerca de', wait:10).click
@@ -349,7 +438,68 @@ class UserPage
         find(:css, 'div.delete').click
         sleep 5
 
-      when :'menu contact file'
+      when :'search'
+        find(:css, 'form.searchbox', wait:10).click
+        find(:id, 'searchbox', wait:10).send_keys 'pdf'
+        sleep 5
+
+      when :'Carpeta Automatizacion'
+        texto= "Carpeta Automatizacion"
+        find(:css, 'div.file-name.list-view', text: texto, wait:15).click
+
+      when :'move image'
+        texto= "carga jpg"
+        find(:css, 'div.file-name.list-view', text: texto, wait:15)
+        within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+          find(:css, 'ul.menu', wait:10).click
+          all(:css, 'div.action-icon', wait:10)[5].click
+        end
+
+      when :'move audio'
+        texto= "carga mp3"
+        find(:css, 'div.file-name.list-view', text: texto, wait:15)
+        within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+          find(:css, 'ul.menu', wait:10).click
+          all(:css, 'div.action-icon', wait:10)[5].click
+        end
+
+      when :'move video'
+        texto= "carga mp4"
+        find(:css, 'div.file-name.list-view', text: texto, wait:15)
+        within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+          find(:css, 'ul.menu', wait:10).click
+          all(:css, 'div.action-icon', wait:10)[5].click
+        end
+
+      when :'move txt'
+        texto= "carga txt"
+        find(:css, 'div.file-name.list-view', text: texto, wait:15)
+        within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+          find(:css, 'ul.menu', wait:10).click
+          all(:css, 'div.action-icon', wait:10)[5].click
+        end
+
+      when :filter
+        find(:id, 'SearchInput', wait:10).send_keys "ABCDEFGJIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+!3$%&/()=?¿:;.,"
+        find(:id, 'SearchInput', wait:10).native.clear
+
+      when :'first contact'
+        all(:css, 'div.ContactsContact', wait:10)[0].click
+        find(:css, 'div.DetailAvatar', wait:10)
+        puts "Se encontro foto de perfil".cyan
+        find(:css, 'div.DetailName', wait:10)
+        puts "Se encontro el nombre".cyan
+        find(:css, 'div.DetailsDate', wait:10)
+        puts "Se encontro la fecha de nacimiento".cyan
+        find(:css, 'div.DetailsLocation', wait:10)
+        puts "Se encontro la dirección".cyan
+        find(:css, 'div.DetailsPhones', wait:10)
+        puts "Se encontro el/los números telefónicos".cyan
+        find(:css, 'div.DetailsMail', wait:10)
+        puts "Se encontro el correo electónico".cyan
+        find(:id, 'IconClose', wait:10).click
+
+
 
       else
         raise "#{button}, no es us un boton valido."
@@ -435,7 +585,7 @@ class UserPage
     def find_element(type)
       contents = for_contents(Utils.country)
     case type.to_sym
-    when :folder,:editor,:file,:'file shared for link',:'terms and conditios', 'image', 'video', 'audio', 'text',
+    when :folder,:editor,:file,:'file shared for link',:'terms and conditios', :'TSA',
         :'invitations',:'user whitin family space',:'read only',:'window of uploads',:'video uploaded',:'te compartieron', :'compartiste', :'invitation canceled'
       @value = HelperUser.find_elem(type)
       @value.each do |key,val|
@@ -493,12 +643,43 @@ class UserPage
       find(:css, 'strong',text:'no podrás subir o compartir archivos y tendrás 30 días para obtener un nuevo plan',wait:30)
 
     when :'contacts'
-      begin
-        numElem=all(:css, 'span.ext', text:'.vcf').size
-        puts "Hay un total de '#{numElem}' contactos".yellow
-      rescue Capybara::ElementNotFound
-        puts "No se econtraron contactos".yellow
-      end
+      numName=all(:css, 'app-contacts-item', wait:5).size
+      puts "Hay un total de '#{numName}' contactos".yellow
+
+      numName2 = find(:css, 'div.ContactsQuantity strong', wait:5).text
+      puts "Y en la etiqueta hay un total de #{numName2} contactos".yellow
+      #numName2 = email[0..email.length-13]
+
+      #begin
+       # numElem=all(:css, 'span.ext', text:'.vcf').size
+        #puts "Hay un total de '#{numElem}' contactos".yellow
+      #rescue Capybara::ElementNotFound
+       # puts "No se econtraron contactos".yellow
+      #end
+
+    when :'contacts label'
+      texto="Contactos"
+      find(:css, 'app-contacts-navbar div ', text:texto, wait:30)
+      puts "Esta la etiqueta Contactos".cyan
+
+    when :'name label'
+      texto="Nombre"
+      find(:css, 'div.ContactsHeaders div.HeaderName', text:texto, wait:30)
+      puts "Esta la etiqueta Nombre".cyan
+
+    when :'phone label'
+      texto="Número telefónico"
+      find(:css, 'div.ContactsHeaders div.HeaderPhone', text:texto, wait:30)
+      puts "Esta la etiqueta Número telefónico".cyan
+
+    when :'email label'
+      texto="Correo electrónico"
+      find(:css, 'div.ContactsHeaders div.HeaderMail', text:texto, wait:30)
+      puts "Esta la Correo electrónico".cyan
+
+    when :'last update label'
+      numName3 = find(:css, 'app-contacts-menu div.ContactsLastUpdate', wait:5).text
+      puts "Última actualización: #{numName3}".yellow
 
     when :'Option Created'
       if $env == 'PROD'
@@ -663,9 +844,32 @@ class UserPage
       all(:css, 'div.activitysubject', text: texto, wait:20)[0]
       puts "Renombraste Archivo Automatizacion".yellow
 
+    when :'pdfs'
+      begin
+        numElem=all(:css, 'span.ext', text:'.pdf').size
+        puts "Hay un total de '#{numElem}' pdfs".yellow
+      rescue Capybara::ElementNotFound
+        puts "No se econtraron pdf".yellow
       end
-    end
 
+    when :'image'
+      find(:css, 'span.name-without-extension',text:'carga jpg',wait:30)
+      puts "Se encontro la imagen en la carpeta".cyan
+
+    when :'audio'
+      find(:css, 'span.name-without-extension',text:'carga jpg',wait:30)
+      puts "Se encontro la imagen en la carpeta".cyan
+
+    when :'video'
+      find(:css, 'span.name-without-extension',text:'carga jpg',wait:30)
+      puts "Se encontro la imagen en la carpeta".cyan
+
+    when :'txt'
+      find(:css, 'span.name-without-extension',text:'carga jpg',wait:30)
+      puts "Se encontro la imagen en la carpeta".cyan
+
+    end
+    end
 
     def stop_sharing(type)
       contents = for_contents(Utils.country)
@@ -1124,7 +1328,17 @@ class UserPage
       end
     end
 
-
+    def folder (option)
+      case option.to_sym
+      when :'Carpeta Automatizacion'
+        texto = "Carpeta Automatizacion"
+        within(find(:css, 'div.modal-wrapper', wait:10))do
+          find(:css, 'div.file.list-view', text: texto, wait:10).click
+         sleep 5
+          find(:id, 'Move', wait:10).click
+        end
+      end
+    end
 
     #Función para cerrar sesión.
     def logout

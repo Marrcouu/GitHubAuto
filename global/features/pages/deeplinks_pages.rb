@@ -14,6 +14,8 @@ class DeepLinksPages
       @current_url = URI.parse(current_url).to_s
       puts "Esta es la url resultante #{@current_url}".magenta
       @current_url
+
+
     end
     def validate_deeplink(deeplink)
 

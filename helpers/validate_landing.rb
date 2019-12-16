@@ -26,8 +26,69 @@ class ValidateLanding
     },
     :"Colombia" => {
       :"imagen Colombia" => {etiqueta:'img[src="/img/CO_round.png"]',metodo:'find'},
-      :"texto Colombia" => {etiqueta:'span.country',metodo:'find'}
+      :"texto Colombia" => {etiqueta:'span.CD-Name',metodo:'find'}
     },
+    :"Brasil" => {
+      :"imagen Brasil" => {etiqueta:'img[src="/img/BR_round.png"]',metodo:'find'},
+      :"texto Brasil" => {etiqueta:'span.CD-Name',metodo:'find'}
+    },
+    :"Guatemala" => {
+      :"imagen Guatemala" => {etiqueta:'img[src="/img/GT_round.png"]',metodo:'find'},
+      :"texto Guatemala" => {etiqueta:'span.CD-Name',metodo:'find'}
+    },
+    :"Honduras" => {
+      :"imagen Honduras" => {etiqueta:'img[src="/img/HN_round.png"]',metodo:'find'},
+      :"texto Honduras" => {etiqueta:'span.CD-Name',metodo:'find'}
+    },
+    :"Nicaragua" => {
+      :"imagen Nicaragua" => {etiqueta:'img[src="/img/NI_round.png"]',metodo:'find'},
+      :"texto Nicaragua" => {etiqueta:'span.CD-Name',metodo:'find'}
+    },
+    :"El Salvador" => {
+      :"imagen El Salvador" => {etiqueta:'img[src="/img/SV_round.png"]',metodo:'find'},
+      :"texto El Salvador" => {etiqueta:'span.CD-Name',metodo:'find'}
+    },
+    :"Costa Rica" => {
+      :"imagen Costa Rica" => {etiqueta:'img[src="/img/CR_round.png"]',metodo:'find'},
+      :"texto Costa Rica" => {etiqueta:'span.CD-Name',metodo:'find'}
+    },
+    :"Peru" => {
+      :"imagen Peru" => {etiqueta:'img[src="/img/PE_round.png"]',metodo:'find'},
+      :"texto Peru" => {etiqueta:'span.CD-Name',metodo:'find'}
+    },
+    :"Argentina" => {
+      :"imagen Argentina" => {etiqueta:'img[src="/img/AR_round.png"]',metodo:'find'},
+      :"texto Argentina" => {etiqueta:'span.CD-Name',metodo:'find'}
+    },
+    :"Panama" => {
+      :"imagen Panama" => {etiqueta:'img[src="/img/PA_round.png"]',metodo:'find'},
+      :"texto Panama" => {etiqueta:'span.CD-Name',metodo:'find'}
+    },
+    :"Chile" => {
+      :"imagen Chile" => {etiqueta:'img[src="/img/CL_round.png"]',metodo:'find'},
+      :"texto Chile" => {etiqueta:'span.CD-Name',metodo:'find'}
+    },
+    :"Ecuador" => {
+      :"imagen Ecuador" => {etiqueta:'img[src="/img/EC_round.png"]',metodo:'find'},
+      :"texto Ecuador" => {etiqueta:'span.CD-Name',metodo:'find'}
+    },
+    :"Puerto Rico" => {
+      :"imagen Puerto Rico" => {etiqueta:'img[src="/img/PR_round.png"]',metodo:'find'},
+      :"texto Puerto Rico" => {etiqueta:'span.CD-Name',metodo:'find'}
+    },
+    :"Republica Dominicana" => {
+      :"imagen RD" => {etiqueta:'img[src="/img/DO_round.png"]',metodo:'find'},
+      :"texto RD" => {etiqueta:'span.CD-Name',metodo:'find'}
+    },
+    :"Uruguay" => {
+      :"imagen Uruguay" => {etiqueta:'img[src="/img/UY_round.png"]',metodo:'find'},
+      :"texto Uruguay" => {etiqueta:'span.CD-Name',metodo:'find'}
+    },
+    :"Paraguay" => {
+      :"imagen Paraguay" => {etiqueta:'img[src="/img/PY_round.png"]',metodo:'find'},
+      :"texto Paraguay" => {etiqueta:'span.CD-Name',metodo:'find'}
+    },
+
     :"Registrate_SupDer" => {
       :"texto register" => {etiqueta: 'div.txt2', contenido:'Escoge una opción para registrarte',metodo:'find'},
       :"link register telmex" => {etiqueta:'a[href="/register/mexico/telmex"]',metodo:'first'},
@@ -88,8 +149,8 @@ class ValidateLanding
     :"Planes" => {
       :"Texto necesitas" => {etiqueta:'div.txt1',contenido:'¿Necesitas más espacio?',metodo:'find'},
       :"Texto planes" => {etiqueta:'div.txt2',contenido:'Para llevar tus archivos a donde quieras, es probable que necesites un plan a tu medida. Por ello te ofrecemos planes flexibles en los que instantáneamente obtendrás una mayor capacidad de almacenamiento en la nube.',metodo:'find'},
-      :"div 75" => {etiqueta:'div.capacidad',contenido:'150GB',metodo:'find'},
-      :"div 150" => {etiqueta:'div.capacidad',contenido:'250GB',metodo:'find'},
+      :"div 75" => {etiqueta:'div.capacidad',contenido:'200GB',metodo:'find'},
+      :"div 150" => {etiqueta:'div.capacidad',contenido:'300GB',metodo:'find'},
       :"div 1024" => {etiqueta: 'div.capacidad',contenido:'1024GB',metodo:'find'}
     },
     :"Negocio" => {
@@ -144,10 +205,9 @@ class ValidateLanding
       :"imagen" => {etiqueta:'div.div-terms',metodo:'find'},
     },
     :"Descarga la app Android" => {
-
       :"imagen" => {
             #etiqueta:'a[href="https://play.google.com/store/apps/developer?id=CLARO"]', metodo:'first'
-            etiqueta:'img.gb_la', metodo:'find'}
+            etiqueta:'img.gb_ua', metodo:'find'}
     },
     :"Descarga la app iOS" => {
       :"div" => {etiqueta:'div.localnav-background.we-localnav__background',metodo:'find'}
@@ -155,6 +215,11 @@ class ValidateLanding
     :"Descarga la app" => {
       :"button" => {etiqueta:'input.button.download-win',metodo:'find'}
     },
+    :"Data Security" => {
+      :"button" => {etiqueta:'p', metodo:'find'}
+    },
+
+
   }
 
   @validate_countries = {

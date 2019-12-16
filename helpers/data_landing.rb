@@ -3,7 +3,7 @@ class DataLandingElements
     :"Claro video" => 'a[href="https://www.clarovideo.com/"]',
     :"Claro música" => 'a[href="https://www.claromusica.com/"]',
     :"Claro shop" => 'a[href="http://www.claroshop.com/"]',
-    :"Paises" => 'div.dropbtn',
+    :"Paises" => 'div.CountryDropdown',
     :"Mexico" => '/?country=mexico',
     :"Colombia" => 'a[href="/?country=colombia"]',
     :"Brasil" => 'a[href="/?country=brasil"]',
@@ -54,7 +54,7 @@ class DataLandingElements
     :"Descarga la app iOS" => 'a[href="https://itunes.apple.com/mx/app/claro-drive/id1250666367?mt=8"]',
     :"Descarga la app" => 'a[href="/download"]',
     :"Boton Inicia sesión" => 'a.btn-login-landing[href="/login/mexico"]',
-
+    :"Data Security" => 'span'
   }
   @hash_buttons_negocio = {
     :"Caracteristicas" => 'a[href="/microsite/mexico/claronegocio#1"]',

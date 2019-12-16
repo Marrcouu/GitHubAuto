@@ -69,7 +69,7 @@ And(/^I cancel the account$/) do
   UserPage.cancelAccount
 end
 
-And(/^I download a file "([^"]*)"$/) do |file|
+And(/^I download element "([^"]*)"$/) do |file|
   FilesPage.downloadFile(file)
 end
 
@@ -93,4 +93,9 @@ end
 
 And(/^I delete "([^"]*)"$/) do |element|
   UserPage.clean(element)
+end
+
+
+And(/^I choose "([^"]*)" folder from choose carpet option$/) do |fol|
+  UserPage.folder(fol)
 end

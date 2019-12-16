@@ -35,7 +35,7 @@ class Utils
   }
 
   @environments = {
-    TEST: 'http://test-portal.clarodrive.com', #'https://dev-portal.clarodrive.com/',
+    TEST: 'http://test-portal.clarodrive.com', #'http://test.clarodrive.com/', 'https://dev-portal.clarodrive.com/',
     #DEMO: 'https://demoweb.clarovideo.net',
     PROD: 'https://www.clarodrive.com'
   }

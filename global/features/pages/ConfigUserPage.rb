@@ -115,6 +115,20 @@ class ConfigUserPage
       end
     end
 
+    def prueba(type)
+      case type.to_sym
+      when :'Claro video'
+        find(:css, 'a[href="https://www.clarovideo.com/"]', wait:10).click
+        puts "Hice click en Claro video".cyan
+        switch_to_window(windows.last)
+        all(:css, 'div.claro-navitem_container', wait:10)[2].click
+        sleep 5
+        page.refresh
+        sleep 5
+      end
+    end
+
+
     def change_profile_picture
       ran = Random.new.rand(1..5)
       dirProfPic = "../carga/perfil #{ran}.jpg"

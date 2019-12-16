@@ -57,7 +57,7 @@ class RegistrationTlmxPage
       credentials = DataUsers.data
       credentials[:number].to_s.each_char do |char|
         sleep 0.1
-        find(:css,'input[name="identifier"]', wait:10).send_keys char if char
+        find(:id,'username', wait:10).send_keys char if char
         end
      find(:css,'input[name="username"]', wait:10).native.send_keys credentials[:email] if credentials[:email] != 'random_new' and credentials[:email] != 'random_old' and credentials[:email]
      find(:css,'input[name="username"]', wait:10).native.send_keys email_random("new") if credentials[:email] == 'random_new'

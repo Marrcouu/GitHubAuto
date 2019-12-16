@@ -27,12 +27,15 @@ class LandingPage
         all(:css,@button_name,wait:10)[2].click if button == :"Obtener 1Tb"
       when 'a[href="/#1"]' || 'a[href="/#2"]' || 'a[href="/#3"]' || 'a[href="/#4"]' || 'a[href="/#5"]' || 'a[href="/#6"]'
         first(:css,@button_name,wait:10).click
+      when 'span'
+        find(:css,@button_name,wait:10).click if button == :"PCI Data Security Standard"
       else
         find(:css,@button_name,wait:10).click unless button == :"Claro drive personal" || button == :"Descarga la app Android" || button == :"Descarga la app iOS" || button == :"Descarga la app"
         all(:css,@button_name,wait:10)[0].click if button == :"Claro drive personal" || button == :"Descarga la app Android" || button == :"Descarga la app iOS" || button == :"Descarga la app"
       end
       #if $brow.to_s.downcase.strip == 'chrome'
       #switch_to_window { title == 'Page title'}
+      sleep 5
       switch_to_window(windows.last)
 
     end
@@ -60,12 +63,13 @@ class LandingPage
         end
       end
     end
+
     #Funcion exclusiva para validar el combo paises
     def validate_countries
       @validate_countries = ValidateLanding.validation_countries
       @validate_countries.each do |key,country|
-        find(:css,country,wait:10)
-        puts "Se valido el link de #{key}".cyan
+        #find(:css,country,wait:10)
+      #  puts "Se valido el link de #{key}".cyan
       end
     end
 

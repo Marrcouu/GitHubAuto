@@ -1,0 +1,42 @@
+Navegador: mozilla - Hora: 12:33  - Ambiente: TEST
+	Partner: correo - > 7.367883 seg
+
+Navegador: mozilla - Hora: 12:37  - Ambiente: TEST
+	Partner: claro musica - > 10.489127 seg
+
+Navegador: mozilla - Hora: 12:38  - Ambiente: TEST
+	Partner: claro video - > 8.115319 seg
+
+Navegador: chrome - Hora: 12:49  - Ambiente: TEST
+	Partner: correo - > 7.790294 seg
+
+Navegador: chrome - Hora: 12:50  - Ambiente: TEST
+	Partner: telmex - > 7.888718 seg
+
+Navegador: chrome - Hora: 12:50  - Ambiente: TEST
+	Partner: claro musica - > 15.974304 seg
+
+Navegador: chrome - Hora: 12:51  - Ambiente: TEST
+	Partner: claro video - > 8.931874 seg
+
+Navegador: chrome - Hora: 18:04  - Ambiente: TEST
+	Partner: correo - > 7.836777 seg
+
+Navegador: chrome - Hora: 18:04  - Ambiente: TEST
+	Partner: telmex - > 8.060315 seg
+
+Navegador: chrome - Hora: 18:05  - Ambiente: TEST
+	Partner: claro musica - > 10.814573 seg
+
+Navegador: chrome - Hora: 18:05  - Ambiente: TEST
+	Partner: claro video - > 9.489683 seg
+
+Navegador: mozilla - Hora: 18:28  - Ambiente: TEST
+	Partner: correo - > 7.490754 seg
+
+Navegador: mozilla - Hora: 18:31  - Ambiente: TEST
+	Partner: claro musica - > 9.974214 seg
+
+Navegador: mozilla - Hora: 18:32  - Ambiente: TEST
+	Partner: claro video - > 9.7143 seg
+

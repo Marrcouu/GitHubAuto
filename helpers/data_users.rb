@@ -1082,7 +1082,7 @@ class DataUsers
         },
         :'login telmex'=> {
           :'correct user with telmex'=>{
-            :email => @data_users_label['user_email_tlmx'],
+            :email => @data_users_label['user_email_tlmx2'],
             :password => @data_users_label['user_password']
           },
           :'wrong email and password' => {
@@ -1159,7 +1159,8 @@ class DataUsers
               :user_lastname => @data_users_label['user_lastname'],
               :email => @data_users_label['random_new'],
               :password => @data_users_label['user_password2'],
-              :number => @data_users_label['number_telmex_valid1']
+              #:number => @data_users_label['number_telmex_valid1']
+              :number => @data_users_label['user_email_tlmx']
             }
           },
           :'telcel'=>{

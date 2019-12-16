@@ -66,7 +66,8 @@ class IndexPage
       when :login
           page.find(:css, 'a.btn-login-landing', text: contents[:contents][:login_button], wait:10).click
           #find(:css, 'a.btn-login', text:'INICIA SESIÓN', wait:10).click
-        when :registration
+
+      when :registration
           #page.find(:css, 'a.register',visible: true,  wait:20).click
           find(:css, 'a.register', wait:10).click
         else

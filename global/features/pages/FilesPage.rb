@@ -37,58 +37,21 @@ class FilesPage
 
     def downloadFile(file)
       case file.to_sym
-      when :'contact-pdf', :'contact-csv', :'contact-vcf'
-        if $env=='PROD'
-          texto = "2019-10-04_09-44-35"
-          find(:css, 'span.name-without-extension', text: texto, wait:20)
-          puts "se encontro el archivo contacto"
-          case file.to_sym
-          when :'contact-pdf'
-            within(find(:css, 'div.file.app-droppable', text: texto, wait:10))do
-              find(:css,'ul.menu', wait:5).click
-              sleep 1
-              all(:css, 'div.action-icon', wait:5)[2].click
-              sleep 5
-            end
+      when :'contacts in pdf'
+          find(:css, 'div.DownloadButton', wait:10).click
+          all(:css, 'div.DownloadOption', wait:10)[0].click
+          puts "se descargo contactos en pdf".yellow
+          sleep 5
 
-          when :'contact-csv'
-            within(find(:css, 'div.file.app-droppable', text: texto, wait:10))do
-              all(:css, 'div.action-icon', wait:5)[3].click
-            end
+      when :'contacts in vcf'
+        all(:css, 'div.DownloadOption', wait:10)[1].click
+        puts "se descargo contactos en vcf".yellow
+        sleep 5
 
-          when :'contact-vcf'
-            within(find(:css, 'div.file.app-droppable', text: texto, wait:10))do
-              all(:css, 'div.action-icon', wait:5)[4].click
-            end
-            sleep 5
-            end
-        else
-          texto = "2019-10-04_09-54-22"
-          find(:css, 'span.name-without-extension', text: texto, wait:20)
-          puts "se encontro el archivo contacto"
-          case file.to_sym
-          when :'contact-pdf'
-            within(find(:css, 'div.file.app-droppable', text: texto, wait:10))do
-              find(:css,'ul.menu', wait:5).click
-              sleep 1
-              all(:css, 'div.action-icon', wait:5)[2].click
-              sleep 5
-            end
-
-          when :'contact-csv'
-            within(find(:css, 'div.file.app-droppable', text: texto, wait:10))do
-              all(:css, 'div.action-icon', wait:5)[3].click
-            end
-
-          when :'contact-vcf'
-            within(find(:css, 'div.file.app-droppable', text: texto, wait:10))do
-              all(:css, 'div.action-icon', wait:5)[4].click
-            end
-            sleep 5
-          end
-
-
-
+      when :'contacts in csv'
+        all(:css, 'div.DownloadOption', wait:10)[2].click
+        puts "se descargo contactos en csv".yellow
+        sleep 5
       #end
         #nameFile = find(:css,'div.file-name',wait:10)['2019-06-04_16-15-45']
         #within(find(:css, "tr[data-file='#{nameFile}']", wait:40))do
@@ -109,8 +72,6 @@ class FilesPage
            # File.delete(fileDownloaded) if File.exist?(fileDownloaded)
             #find(:css, 'a.menuitem.action.action-downloadvcf.permanent.cd-tooltip[data-action="DownloadVCF"]', wait:10).click
           #end
-
-        end
 
       when :'jpg'
         texto = "carga jpg"
@@ -209,7 +170,7 @@ class FilesPage
       case file.to_sym
       when :'contact-pdf', :'contact-csv', :'contact-vcf'
         if $env=='PROD'
-        texto = "2019-10-02_09-46-06"
+        texto = "2019-10-15_12-15-11"
         find(:css, 'span.name-without-extension', text: texto, wait:20)
         within(find(:css, 'div.file.app-droppable', text: texto, wait:10))do
       #when :'contact-pdf', :'contact-csv', :'contact-vcf'
@@ -239,7 +200,7 @@ class FilesPage
           sleep 2
         end
         else
-          texto = "2019-10-02_09-44-04"
+          texto = "2019-11-08_14-06-17"
           find(:css, 'span.name-without-extension', text: texto, wait:20)
           within(find(:css, 'div.file.app-droppable', text: texto, wait:10))do
             #when :'contact-pdf', :'contact-csv', :'contact-vcf'
