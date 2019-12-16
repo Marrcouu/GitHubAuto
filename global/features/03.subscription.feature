@@ -44,27 +44,35 @@ Feature: Subscription in claro drive
 
   @p0 @mx @email @chrome @mozilla @safari @edge @ie
     #TC-3667
-    Scenario: Validate a subscription in partner email with payment method credit card plan 75gb
-      Given I am an "new" user
-      When I open the app
-      And I logout if a session is started
-      And I click on "registration" button from "home" page
-      Then I should see "partners" page
-      And I click on "email" partner option
-      Then I should see "registration email" page
-      And I enter "correct user" in partner "email"
-      And I click on "registration" button from "registration email" page
-      Then I should see "plans" page
-      And I click on "75gb" plan
-      And I click on "credit card" payment method
-      And I enter "correct data of credit card" in payment method "credit card"
-      And I click on "accept" button from "plans" page
-      Then I should see message "75gb"
-      And I click on "continue" button from "congratulations" page
-      Then I should see "popup" page
-      And I click on "close" button from "popup" page
-      Then I should see "user" page
-      Then I logout
+  Scenario: Validate a subscription in partner email with payment method credit card plan 75gb
+    Given I am an "new" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "registration" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "registration email" page
+    And I enter "correct user" in partner "email"
+    And I click on "registration" button from "registration email" page
+    Then I should see "plans" page
+    And I click on "75gb" plan
+    And I click on "credit card" payment method
+    And I enter "correct data of credit card" in payment method "credit card"
+    And I click on "accept" button from "plans" page
+    Then I should see message "75gb"
+    And I click on "continue" button from "congratulations" page
+    Then I should see "popup" page
+    And I click on "Google play" on popup page
+    And I should see "Google logo" from google play page
+    And I click on "App store" on popup page
+    And I should see "Apple logo" from app store page
+    And I click on "Claro desktop" on popup page
+    And I should see "Download buttons" from Claro drive page
+    And I click on "Terminos y privacidad" on popup page
+    And I should see "Clarodrive logo" from Claro drive page
+    And I click on "close" button from "popup" page
+    Then I should see "user" page
+    Then I logout
 
   @p0 @mx @email @chrome @mozilla @safari @edge @ie
     #TC-3668

@@ -51,6 +51,30 @@ class PopupPage
     # recibe un parametro tipo STRING,
     # lo convierte en simbolo,
     # da click al botón según el valor recibido,
+
+    def click_but(but)
+      case but.to_sym
+      when :'Google play'
+        find(:css, 'a[href="https://play.google.com/store/apps/details?id=com.clarodrive.android', wait:10).click
+        sleep 10
+
+      when :'App store'
+        find(:css, 'a[href="https://itunes.apple.com/mx/app/claro-drive/id1250666367?mt=8', wait:10).click
+        sleep 10
+
+      when :'Claro desktop'
+        find(:css, 'a[href="https://test-portal.clarodrive.com/download_inside', wait:10).click
+        sleep 10
+
+      when :'Terminos y privacidad'
+        find(:css, 'a[href="https://test-portal.clarodrive.com/terms_inside', wait:10).click
+        sleep 10
+
+
+
+      end
+    end
+
     def click_button(button)
       case button.to_sym
         when :'claro drive for mac'

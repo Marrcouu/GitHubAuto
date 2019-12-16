@@ -1,0 +1,6 @@
+Navegador: chrome - Hora: 18:19  - Ambiente: TEST
+	Partner: correo - > 7.825742 seg
+
+Navegador: chrome - Hora: 18:26  - Ambiente: TEST
+	Partner: claro video - > 9.65578 seg
+

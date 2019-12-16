@@ -29,3 +29,7 @@ end
 And(/I close tab/)do
   page.driver.quit
 end
+
+And(/^I should see "([^"]*)" from landing page$/) do |ele|
+  LandingPage.show_elements(ele)
+end

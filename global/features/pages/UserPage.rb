@@ -77,6 +77,197 @@ class UserPage
       end
     end
 
+    def jetro(but)
+      case but.to_sym
+        when :'config'
+          find(:id, 'expand', wait:20).click
+          find(:css, 'a[href="/settings/user"]', wait:10).click
+
+        when :'payment info'
+          find(:css, 'a[href="/settings/user/payment_info"]', wait:10).click
+
+        when :'250 GB'
+          all(:css, 'div.plan', wait:10 )[1].click
+
+      when :'150 GB'
+        all(:css, 'div.plan', wait:10 )[1].click
+
+        when :'security code'
+          sleep 15
+          find(:css, 'input.form-control', wait:10 ).click
+
+        when :'code'
+          find(:css, 'input.form-control', wait:10).send_keys '698'
+          find(:css, 'button.confirm', wait:10).click
+          sleep 30
+          find(:css, 'button.confirm', wait:10).click
+          sleep 15
+
+      when :'Google logo'
+         switch_to_window(windows.last)
+         find(:css, 'img.gb_la', wait:10)
+         puts "Se encontró logo de Google Play".white
+         switch_to_window(windows.first)
+         sleep 10
+
+      when :'Apple logo'
+        switch_to_window(windows.last)
+        find(:css, 'a.ac-gn-link-apple', wait:10)
+        puts "Se encontró logo de App store".white
+        switch_to_window(windows.first)
+        sleep 10
+
+      when :'Windows logo'
+        switch_to_window(windows.last)
+        find(:css, 'a.ac-gn-link-windows', wait:10)
+        puts "Se encontro "
+
+      when :'Download buttons'
+        switch_to_window(windows.last)
+        find(:css, 'div.download-conainter-buttons', wait:10)
+        puts "Se encontró botones de descarga".white
+        switch_to_window(windows.first)
+        sleep 10
+
+      when :'Clarodrive logo'
+        switch_to_window(windows.last)
+        find(:css, 'img[src="/img/claro-sync-black.svg"]', wait:10)
+        puts "Se encontró logo de Clarodrive".white
+        switch_to_window(windows.first)
+        sleep 10
+
+      when :'Gallery button'
+        find(:css, 'a[href="/apps/gallery/"]', wait:20).click
+
+      when :'Order by'
+        find(:id, 'orderListBy', wait:10).click
+        sleep 10
+
+
+      when :'Oldest first'
+        texto= "Más antiguas primero"
+        find(:css, 'li.order', text: texto, wait:10).click
+        sleep 5
+
+
+      when :'Recent first'
+        texto= "Más recientes primero"
+        find(:css, 'li.order', text: texto, wait:10).click
+        sleep 5
+
+
+      when :'All button'
+        find(:css, 'div.tab-all', wait:10).click
+        sleep 5
+
+      when :'Albums button'
+        find(:css, 'div.tab-albums', wait:10).click
+        sleep 5
+
+      when :'Shared button'
+        find(:css, 'div.tab-shared', wait:10).click
+        sleep 5
+
+
+      when :'Image open menu'
+        texto= "reuvxjd"
+        find(:css, 'div.file-name.list-view', text: texto, wait:15)
+        within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+          find(:css, 'ul.menu', wait:10).click
+          all(:css, 'div.action-icon', wait:10)[5].click
+        end
+
+
+      when :'Move or copy'
+        all(:css, 'div.action-icon', wait:15)[6].click
+
+      when :'Folder'
+        texto= "Prueba"
+        within(find(:css, 'div.modal-wrapper', wait:10))do
+          find(:css, 'div.file.list-view', text: texto, wait:10).click
+        sleep 10
+      end
+
+
+      when :'Move'
+        find(:id, 'Move', wait:10).click
+        sleep 10
+
+
+      when :'Activity button'
+        find(:css, 'a[href="/apps/activity/"]', wait:20).click
+        sleep 10
+
+      when :'image'
+        all(:css, 'div.draggable-image', wait:20)[6].click
+        sleep 10
+
+
+      when :'close'
+        find(:css, 'input.svg.exit', wait:20).click
+        sleep 5
+
+      when :'video'
+        all(:css, 'div.player_icon', wait:20)[0].click
+        sleep 10
+
+      when :'play'
+        find(:css, 'button.vjs-big-play-button', wait:20).click
+        sleep 35
+
+      when :'pause'
+        find(:css, 'video.vjs-tech', wait:20).click
+        sleep 10
+
+      when :'By you'
+        all(:css, 'div.filter',  wait:10)[1].click
+        sleep 10
+
+      when :'By others'
+        all(:css, 'div.filter',  wait:10)[2].click
+        sleep 10
+
+
+      when :'Favorites'
+        all(:css, 'div.filter',  wait:10)[3].click
+        sleep 10
+
+
+      when :'Shared files'
+        all(:css, 'div.filter',  wait:10)[4].click
+        sleep 10
+
+
+      when :'Security'
+        all(:css, 'div.filter',  wait:10)[5].click
+        sleep 10
+
+
+      when :'Shared files'
+        all(:css, 'div.filter',  wait:10)[6].click
+        sleep 10
+
+
+      when :'Comments'
+        all(:css, 'div.filter',  wait:10)[7].click
+        sleep 10
+
+
+
+      when :'config'
+        find(:id, 'expand', wait:20).click
+        find(:css, 'a[href="/settings/user"]', wait:10).click
+
+
+
+      end
+    end
+
+
+
+
+
+
     #Función para dar click,
     # recibe un parametro tipo STRING,
     # lo convierte en simbolo,

@@ -41,8 +41,8 @@ end
 
 When(/^I open the app$/) do
   IndexPage.open_app
-end
 
+end
 Then(/^I should see "(.*?)" page$/) do |page|
   @value =  Redirection.chose_page(:'validate page',page.to_sym)
   clazz = @value[:page].constantize
@@ -54,6 +54,7 @@ And(/^I click on "([^"]*)" button from "([^"]*)" page$/) do |button, page|
   clazz = @value[:page].constantize
   clazz.send(@value[:function]) if @value[:valor] == 'no'
   clazz.send(@value[:function],button) if @value[:valor] == 'si'
+
 end
 
 And(/^I get the time used to login on "([^"]*)" partner$/) do |partner|
@@ -90,4 +91,9 @@ Then(/^I scroll "([^"]*)"$/) do |option|
     perform_action('swipe', 'right')
     sleep 1
   end
+end
+
+
+And(/^I click on "([^"]*)" on popup page$/) do |ele|
+  PopupPage.click_but(ele)
 end

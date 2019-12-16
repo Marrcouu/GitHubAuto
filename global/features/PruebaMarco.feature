@@ -543,7 +543,7 @@ Feature: Tests
     Then I should do all functions for "image2" element
     And I click on "close file" button from "user" page
     And I download a file "jpg2"
-    Then I should see "jpg" file downloaded
+    Then I should see "jpg" fi                 le downloaded
     And  I logout
 
   @p0 @mx @video @chrome @mozilla @safari

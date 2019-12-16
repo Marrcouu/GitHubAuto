@@ -69,6 +69,14 @@ class LandingPage
       end
     end
 
+    def show_elements(ele)
+      case ele.to_sym
+        when :'Clarodrive logo'
+          find(:css, 'img[src="/img/claro-sync-white.svg"]', wait:20)
+          puts "Se encontro Clarodrive logo".yellow
+      end
+    end
+
     def changeto(tab)
       sleep 3
       if $brow == "safari"
