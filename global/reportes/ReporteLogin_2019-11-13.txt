@@ -18,4 +18,9 @@ Navegador: chrome - Hora: 08:34  - Ambiente: PROD
 
 Navegador: chrome - Hora: 08:34  - Ambiente: PROD
 	Partner: claro video - > 7.912163 seg
+Navegador: chrome - Hora: 18:19  - Ambiente: TEST
+	Partner: correo - > 7.825742 seg
+
+Navegador: chrome - Hora: 18:26  - Ambiente: TEST
+	Partner: claro video - > 9.65578 seg
 
