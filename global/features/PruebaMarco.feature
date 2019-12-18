@@ -570,4 +570,142 @@ Feature: Tests
     Given I am an "registered" user
     When I open the app
 
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate first routine
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "new folder" button from "user" page
+    And I enter "name folder" in "home" page
+    Then I should see "folder" element
+    And I click on "close file" button from "user" page
+    And I Upload a file "jpg"
+    Then I should see "window of uploads" element
+    Then I should see "jpg" file
+    And I Upload a file "mp3"
+    Then I should see "window of uploads" element
+    Then I should see "mp3" file
+    And I Upload a file "mp4"
+    Then I should see "window of uploads" element
+    Then I should see "mp4" file
+    And I Upload a file "txt"
+    Then I should see "window of uploads" element
+    Then I should see "txt" file
+    And I click on "move image" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "move audio" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "move video" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "move txt" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "Carpeta Automatizacion" button from "user" page
+    Then I should see "image" element
+    Then I should see "audio" element
+    Then I should see "video" element
+    Then I should see "txt" element
+    And  I logout
+
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate second routine
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "new folder" button from "user" page
+    And I enter "name folder" in "home" page
+    Then I should see "folder" element
+    And I click on "close file" button from "user" page
+    And I Upload a file "jpg"
+    Then I should see "window of uploads" element
+    Then I should see "jpg" file
+    And I Upload a file "mp3"
+    Then I should see "window of uploads" element
+    Then I should see "mp3" file
+    And I Upload a file "mp4"
+    Then I should see "window of uploads" element
+    Then I should see "mp4" file
+    And I Upload a file "txt"
+    Then I should see "window of uploads" element
+    Then I should see "txt" file
+    And I click on "move image" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "move audio" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "move video" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "move txt" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "delete carpet" button from "user" page
+    And I click on "garbage" button from "user" page
+    And I click on "restore carpet" button from "user" page
+    And I click on "home" button from "user" page
+    And I click on "Carpeta Automatizacion" button from "user" page
+    Then I should see "image" element
+    Then I should see "audio" element
+    Then I should see "video" element
+    Then I should see "txt" element
+    And  I logout
+
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate second routine
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "new folder" button from "user" page
+    And I enter "name folder" in "home" page
+    Then I should see "folder" element
+    And I click on "close file" button from "user" page
+    And I Upload a file "jpg"
+    Then I should see "window of uploads" element
+    Then I should see "jpg" file
+    And I Upload a file "mp3"
+    Then I should see "window of uploads" element
+    Then I should see "mp3" file
+    And I Upload a file "mp4"
+    Then I should see "window of uploads" element
+    Then I should see "mp4" file
+    And I Upload a file "txt"
+    Then I should see "window of uploads" element
+    Then I should see "txt" file
+    And I click on "close upload" button from "user" page
+    And I add favorite to "txt"
+    And I add favorite to "image"
+    And I add favorite to "video"
+    And I add favorite to "music"
+    And I click on "move video" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "move txt" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "move audio" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "move image" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "delete carpet" button from "user" page
+    And I click on "garbage" button from "user" page
+    And I click on "restore carpet" button from "user" page
+    And I click on "home" button from "user" page
+    And I click on "Carpeta Automatizacion" button from "user" page
+    Then I should see "image" element
+    Then I should see "audio" element
+    Then I should see "video" element
+    Then I should see "txt" element
+    And  I logout
 

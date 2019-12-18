@@ -87,7 +87,7 @@ class UserPage
       @value = HelperUser.button_selector(button)
       case button.to_sym
       when :'need more space?',:'25gb',:'75gb',:'150gb',:'1024gb',:confirm,:plus,:'sharing confirm',:'config link',
-          :personal,:'family space',:confirm, :'close file', :activity, :configuration,
+          :personal,:'family space',:confirm, :'close file', :activity, :configuration, :'close upload',
         :'home',:'te compartieron',:'compartiste', :'start to enjoy', 'Carpeta '
         @value.each do |key,val|
           Capybara.send(@value[key][:metodo],@value[key][:tag],@value[key][:etiqueta],@value[key][:text], wait:@value[key][:wait]).click if @value[key][:text] != nil
@@ -229,6 +229,13 @@ class UserPage
         ElementExist.element_exist4(contents[:contents][:'name text'],'carga text')
         sleep 5
 
+      when :'delete carpet'
+        sleep 10
+        elemento = all(:css, 'app-list', wait:60)[2]
+        execute_script("arguments[0].scrollIntoView();", elemento)
+        ElementExist.element_exist4(contents[:contents][:'name folder'],'Carpeta Automatizacion')
+        sleep 5
+
       when :'restore file'
         all(:css, 'app-list', wait:60)[1]
         ElementExist.element_exist4(contents[:contents][:'name file'],'Archivo Automatizacion')
@@ -252,6 +259,11 @@ class UserPage
       when :'restore text'
         all(:css, 'app-list', wait:60)[1]
         ElementExist.element_exist4(contents[:contents][:'name text'],'carga text')
+        sleep 5
+
+      when :'restore carpet'
+        all(:css, 'app-list', wait:60)[1]
+        ElementExist.element_exist4(contents[:contents][:'name folder'],'Carpeta Automatizacion')
         sleep 5
 
       when :'rename video'
@@ -453,6 +465,7 @@ class UserPage
         within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
           find(:css, 'ul.menu', wait:10).click
           all(:css, 'div.action-icon', wait:10)[5].click
+          sleep 5
         end
 
       when :'move audio'
@@ -461,6 +474,7 @@ class UserPage
         within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
           find(:css, 'ul.menu', wait:10).click
           all(:css, 'div.action-icon', wait:10)[5].click
+          sleep 5
         end
 
       when :'move video'
@@ -469,6 +483,7 @@ class UserPage
         within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
           find(:css, 'ul.menu', wait:10).click
           all(:css, 'div.action-icon', wait:10)[5].click
+          sleep 5
         end
 
       when :'move txt'
@@ -477,6 +492,7 @@ class UserPage
         within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
           find(:css, 'ul.menu', wait:10).click
           all(:css, 'div.action-icon', wait:10)[5].click
+          sleep 5
         end
 
       when :filter
@@ -858,15 +874,15 @@ class UserPage
 
     when :'audio'
       find(:css, 'span.name-without-extension',text:'carga jpg',wait:30)
-      puts "Se encontro la imagen en la carpeta".cyan
+      puts "Se encontro el audio en la carpeta".cyan
 
     when :'video'
       find(:css, 'span.name-without-extension',text:'carga jpg',wait:30)
-      puts "Se encontro la imagen en la carpeta".cyan
+      puts "Se encontro el video en la carpeta".cyan
 
     when :'txt'
       find(:css, 'span.name-without-extension',text:'carga jpg',wait:30)
-      puts "Se encontro la imagen en la carpeta".cyan
+      puts "Se encontro el texto en la carpeta".cyan
 
     end
     end
@@ -1222,7 +1238,7 @@ class UserPage
         within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
           find(:css,'ul.menu', wait:5).click
           all(:css, 'div.action-icon', wait:5)[2].click
-        sleep 8
+        #sleep 8
         end
       when :video
         texto = "carga mp4"
@@ -1240,7 +1256,7 @@ class UserPage
         within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
           find(:css,'ul.menu', wait:5).click
           all(:css, 'div.action-icon', wait:5)[2].click
-          sleep 8
+        sleep 8
         end
       end
     end

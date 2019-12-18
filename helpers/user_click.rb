@@ -36,6 +36,7 @@ class HelperUser
           :'cerrar modal compartir' => {boton1:{metodo:'find',tag: :css, etiqueta:'span.icon.icon-close', wait:30}},
           :'start to enjoy' => {boton1:{metodo:'find',tag: :css, etiqueta:'a.button', wait:30}},
           :'close file' => {boton1:{metodo:'find',tag: :css,etiqueta:'a.close.icon-close',wait:60}},
+          :'close upload' => {boton1:{metodo:'find',tag: :css,etiqueta:'a.up-close',wait:60}},
       },
       :'find element' => {
           :folder => {elem1:{metodo:'find',tag: :css,etiqueta:'div.file-name', text: :'name folder', wait:10}},
