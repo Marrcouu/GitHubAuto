@@ -565,10 +565,6 @@ Feature: Tests
     Then I logout
     And I clean "new user telmex" from partner "telmex" for "email" in the app "drive"
 
-  @p0 @mx @email @chrome @mozilla @safari @edge @ie
-  Scenario: Validar el funcionamiento del despliegue de países (Brasil)
-    Given I am an "registered" user
-    When I open the app
 
   @p0 @mx @email @chrome @mozilla @safari @edge @ie
   Scenario: Validate first routine
@@ -659,7 +655,7 @@ Feature: Tests
     And  I logout
 
   @p0 @mx @email @chrome @mozilla @safari @edge @ie
-  Scenario: Validate second routine
+  Scenario: Validate third routine
     Given I am an "registered" user
     When I open the app
     And I logout if a session is started
@@ -709,3 +705,78 @@ Feature: Tests
     Then I should see "txt" element
     And  I logout
 
+  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  Scenario: Validate fourth routine
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "new folder" button from "user" page
+    And I enter "name folder" in "home" page
+    Then I should see "folder" element
+    And I click on "close file" button from "user" page
+    And I Upload a file "jpg"
+    Then I should see "window of uploads" element
+    Then I should see "jpg" file
+    And I Upload a file "mp3"
+    Then I should see "window of uploads" element
+    Then I should see "mp3" file
+    And I Upload a file "mp4"
+    Then I should see "window of uploads" element
+    Then I should see "mp4" file
+    And I Upload a file "txt"
+    Then I should see "window of uploads" element
+    Then I should see "txt" file
+    And I click on "close upload" button from "user" page
+    And I click on "move image" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "move audio" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "move video" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "move txt" button from "user" page
+    And I choose "Carpeta Automatizacion" folder from choose carpet option
+    And I click on "Carpeta Automatizacion" button from "user" page
+    And I wait "3"
+    And I click on "move image" button from "user" page
+    And I choose "Main Menu" folder from choose carpet option
+    And I click on "move audio" button from "user" page
+    And I choose "Main Menu" folder from choose carpet option
+    And I click on "move video" button from "user" page
+    And I choose "Main Menu" folder from choose carpet option
+    And I click on "move txt" button from "user" page
+    And I choose "Main Menu" folder from choose carpet option
+    And I click on "home" button from "user" page
+    Then I should see "image" element
+    Then I should see "audio" element
+    Then I should see "video" element
+    Then I should see "txt" element
+    And  I logout
+
+
+
+
+  @p0 @mx @telcel @chrome @mozilla @safari
+  Scenario: Validate registration for telcel
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "telcel" partner option
+    Then I should see "login telcel" page
+    And I enter "correct number" in partner "login telcel"
+    And I click on "next" button from "login telcel" page
+    And I get the password from mobile device
+    And I enter "correct password" in partner "login telcel"
+    And I click on "continue" button from "login telcel" page
+    And I wait "15"
+    Then I should see "popup" page
+    And I click on "close" button from "popup" page
+    Then I should see "user" page
+    Then I logout

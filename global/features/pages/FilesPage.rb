@@ -73,6 +73,16 @@ class FilesPage
             #find(:css, 'a.menuitem.action.action-downloadvcf.permanent.cd-tooltip[data-action="DownloadVCF"]', wait:10).click
           #end
 
+      when :'carpet'
+        texto = "Carpeta Automatizacion"
+        find(:css, 'span.name-without-extension', text: texto, wait:20)
+        puts "se encontro el archivo de descarga".cyan
+        within(find(:css, 'div.file.app-droppable', text: texto, wait:10))do
+          find(:css,'ul.menu', wait:5).click
+          all(:css, 'div.action-icon', wait:5)[5].click
+          sleep 5
+        end
+
       when :'jpg'
         texto = "carga jpg"
         find(:css, 'span.name-without-extension', text: texto, wait:20)
@@ -229,13 +239,7 @@ class FilesPage
             end
             sleep 2
           end
-
         end
-
-
-
-
-
 
       when :'jpg'
         texto = "carga jpg"

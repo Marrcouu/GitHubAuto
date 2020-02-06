@@ -50,7 +50,7 @@ class ElementExist
 
     def element_exist4(element,name)
       begin
-        find(:css, 'div.file-name.list-view', text: element, wait:5)
+        find(:css, 'div.file.app-droppable.list-view', text: element, wait:5)
         puts "Se encontro el archivo '#{element}'"
         within(find(:css, 'div.file.app-droppable.list-view', text: element, wait:10))do
           all(:css, 'div.action-icon', wait:5)[0].click

@@ -25,6 +25,7 @@ class UserPage
                 :hov3 => 'a.menuitem.action.action-movecopy.permanent.cd-tooltip',
                 :hov4 => 'a.menuitem.action.action-download.permanent.cd-tooltip'}
   @contents={:salir => "Cerrar sesión",
+             :ajustes=> "Ajustes",
   }
 
   class << self
@@ -278,7 +279,7 @@ class UserPage
       @value = HelperUser.button_selector(button)
       case button.to_sym
       when :'need more space?',:'25gb',:'75gb',:'150gb',:'1024gb',:confirm,:plus,:'sharing confirm',:'config link',
-          :personal,:'family space',:confirm, :'close file', :activity, :configuration, :'close upload',
+          :'family space',:confirm, :'close file', :activity, :'close upload',
         :'home',:'te compartieron',:'compartiste', :'start to enjoy', 'Carpeta '
         @value.each do |key,val|
           Capybara.send(@value[key][:metodo],@value[key][:tag],@value[key][:etiqueta],@value[key][:text], wait:@value[key][:wait]).click if @value[key][:text] != nil
@@ -286,6 +287,17 @@ class UserPage
           Capybara.send(@value[key][:metodo],@value[key][:tag],@value[key][:etiqueta],wait:@value[key][:wait]).click if @value[key][:index] == nil and @value[key][:text] == nil
           Capybara.send(@value[key][:metodo],@value[key][:tag],@value[key][:etiqueta],wait:@value[key][:wait]).hover if @value[key][:hover] == 'si'
         end
+
+      when :configuration
+        if $brow=='chrome'
+          find(:id, 'expand', wait:10).click
+          sleep 5
+          find(:css, 'a[href="/settings/user"]', wait:10).click
+        else
+          find(:css, 'a[href="/settings/user/family_plan"]', wait:10).click
+          find(:css, 'a[href="/settings/user"]', wait:10).click
+        end
+
 
       when :'descargar'
         begin
@@ -306,8 +318,8 @@ class UserPage
 
       when :'new folder'
         sleep 10
-        elemento = all(:css, 'app-list', wait:60)[1]
-        execute_script("arguments[0].scrollIntoView();", elemento)
+        all(:css, 'app-list', wait:60)[1]
+        #execute_script("arguments[0].scrollIntoView();", elemento)
         ElementExist.element_exist(contents[:contents][:'name folder'],'Carpeta Automatizacion')
         find(:css,'div.button-create-resource', wait:10).click
         find(:css, 'span.menu-item-name',text: contents[:contents][:'new folder'], wait:10).click
@@ -317,6 +329,7 @@ class UserPage
         sleep 10
         elemento = all(:css, 'app-list', wait:60)[2]
         execute_script("arguments[0].scrollIntoView();", elemento)
+        sleep 10
         ElementExist.element_exist2(contents[:contents][:'name file'],'Archivo Automatizacion')
         find(:css,'div.button-create-resource', wait:10).click
         find(:css, 'span.menu-item-name',text: contents[:contents][:'new file'], wait:10).click
@@ -652,7 +665,6 @@ class UserPage
 
       when :'move image'
         texto= "carga jpg"
-        find(:css, 'div.file-name.list-view', text: texto, wait:15)
         within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
           find(:css, 'ul.menu', wait:10).click
           all(:css, 'div.action-icon', wait:10)[5].click
@@ -685,6 +697,8 @@ class UserPage
           all(:css, 'div.action-icon', wait:10)[5].click
           sleep 5
         end
+
+
 
       when :filter
         find(:id, 'SearchInput', wait:10).send_keys "ABCDEFGJIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890+!3$%&/()=?¿:;.,"
@@ -814,7 +828,7 @@ class UserPage
 
     when :'about claro drive'
       within_frame(find(:id, 'ifm', wait:10))do
-        find(:css, 'p',text:'Claro drive © 2019 AMX Contenido S.A. de C.V.',wait:10)
+        find(:css, 'p',text:'Claro drive © 2020 AMX Contenido S.A. de C.V.',wait:10)
       end
 
     when :'target email'
@@ -1061,19 +1075,19 @@ class UserPage
 
     when :'image'
       find(:css, 'span.name-without-extension',text:'carga jpg',wait:30)
-      puts "Se encontro la imagen en la carpeta".cyan
+      #puts "Se encontro la imagen en la carpeta".cyan
 
     when :'audio'
-      find(:css, 'span.name-without-extension',text:'carga jpg',wait:30)
-      puts "Se encontro el audio en la carpeta".cyan
+      find(:css, 'span.name-without-extension',text:'carga mp3',wait:30)
+      #puts "Se encontro el audio en la carpeta".cyan
 
     when :'video'
-      find(:css, 'span.name-without-extension',text:'carga jpg',wait:30)
-      puts "Se encontro el video en la carpeta".cyan
+      find(:css, 'span.name-without-extension',text:'carga mp4',wait:30)
+      #puts "Se encontro el video en la carpeta".cyan
 
     when :'txt'
-      find(:css, 'span.name-without-extension',text:'carga jpg',wait:30)
-      puts "Se encontro el texto en la carpeta".cyan
+      find(:css, 'span.name-without-extension',text:'carga txt',wait:30)
+      #puts "Se encontro el texto en la carpeta".cyan
 
     end
     end
@@ -1151,6 +1165,31 @@ class UserPage
     def functions(button)
       sleep 5
       case button.to_sym
+      when :carpet
+        texto = "Carpeta Automatizacion"
+        find(:css, 'div.file-name.list-view', text: texto, wait:20)
+        puts "Se encontro la carpeta".cyan
+        within(find(:css, 'div.file.app-droppable', text: texto, wait:10))do
+          find(:css,'ul.menu', wait:5).click
+          all(:css, 'div.action-icon', wait:5)[2].click
+        end
+        sleep 5
+        all(:css, 'li.tabHeader', wait:5)[0]
+        puts "Se encontro sección Actividad".cyan
+        sleep 3
+        all(:css, 'li.tabHeader', wait:5)[1].click
+        puts "Se encontro sección Comentarios".cyan
+        sleep 3
+        find(:css, 'span.tag-label', wait:5)
+        puts "Se encontro sección Etiquetas".cyan
+        sleep 3
+        find(:css, 'div.fileName a', wait:5).click
+        puts "Se encontro sección Elemento Oculto y fue activada".cyan
+        sleep 5
+        find(:css, 'div.fileName a', wait:5).click
+        puts "Se encontro sección Elemento Oculto y fue desactivada".cyan
+        sleep 3
+
       when :image
         texto = "carga jpg"
         find(:css, 'span.name-without-extension', text: texto, wait:20)
@@ -1403,16 +1442,17 @@ class UserPage
     end
 
     def favorites(button)
+      if $brow=='chrome'
       case button.to_sym
       when :carpet
         texto = "Carpeta Automatizacion"
         find(:css, 'div.file-name.list-view', text: texto, wait:20)
         puts "Se encontro la carpeta".cyan
-        within(find(:css, 'div.file.app-droppable', text: texto, wait:10))do
+        within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
           find(:css,'ul.menu', wait:5).click
           all(:css, 'div.action-icon', wait:5)[2].click
-          sleep 8
         end
+        sleep 5
       when :image
         texto = "carga jpg"
         find(:css, 'div.file-name.list-view', text: texto, wait:20)
@@ -1420,8 +1460,8 @@ class UserPage
         within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
           find(:css,'ul.menu', wait:5).click
           all(:css, 'div.action-icon', wait:5)[2].click
-        sleep 8
         end
+        sleep 5
       when :music
         texto = "carga mp3"
         find(:css, 'div.file-name.list-view', text: texto, wait:20)
@@ -1429,8 +1469,8 @@ class UserPage
         within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
           find(:css,'ul.menu', wait:5).click
           all(:css, 'div.action-icon', wait:5)[2].click
-        #sleep 8
         end
+        sleep 5
       when :video
         texto = "carga mp4"
         find(:css, 'div.file-name.list-view', text: texto, wait:20)
@@ -1438,8 +1478,8 @@ class UserPage
         within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
           find(:css,'ul.menu', wait:5).click
           all(:css, 'div.action-icon', wait:5)[2].click
-        sleep 8
         end
+        sleep 5
       when :txt
         texto = "carga txt"
         find(:css, 'div.file-name.list-view', text: texto, wait:20)
@@ -1447,22 +1487,76 @@ class UserPage
         within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
           find(:css,'ul.menu', wait:5).click
           all(:css, 'div.action-icon', wait:5)[2].click
-        sleep 8
+        end
+        sleep 5
+      end
+      else
+        case button.to_sym
+        when :carpet
+          texto = "Carpeta Automatizacion"
+          find(:css, 'div.file-name.list-view', text: texto, wait:20)
+          puts "Se encontro la carpeta".cyan
+          within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+            find(:css,'div.open-menu', wait:5).click
+            sleep 5
+            all(:css, 'div.action-icon', wait:5)[2].click
+          end
+          sleep 5
+        when :image
+          texto = "carga jpg"
+          find(:css, 'div.file-name.list-view', text: texto, wait:20)
+          puts "Se encontro la imagen".cyan
+          within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+            find(:css,'div.open-menu', wait:5).click
+            sleep 5
+            all(:css, 'div.action-icon', wait:5)[2].click
+          end
+          sleep 5
+        when :music
+          texto = "carga mp3"
+          find(:css, 'div.file-name.list-view', text: texto, wait:20)
+          puts "se encontro el audio".cyan
+          within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+            find(:css,'div.open-menu', wait:5).click
+            sleep 5
+            all(:css, 'div.action-icon', wait:5)[2].click
+          end
+          sleep 5
+        when :video
+          texto = "carga mp4"
+          find(:css, 'div.file-name.list-view', text: texto, wait:20)
+          puts "se encontro el video".cyan
+          within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+            find(:css,'div.open-menu', wait:5).click
+            sleep 5
+            all(:css, 'div.action-icon', wait:5)[2].click
+          end
+          sleep 5
+        when :txt
+          texto = "carga txt"
+          find(:css, 'div.file-name.list-view', text: texto, wait:20)
+          puts "se encontro el texto".cyan
+          within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+            find(:css,'div.open-menu', wait:5).click
+            sleep 5
+            all(:css, 'div.action-icon', wait:5)[2].click
+          end
+          sleep 5
         end
       end
     end
 
     def clean(button)
       case button.to_sym
-        when :image
-          sleep 5
-          texto = "carga jpg"
-          find(:css, 'div.file-name.list-view', text: texto, wait:20)
-          puts "Se encontro la imagen".cyan
-          within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
-            all(:css, 'div.action-icon', wait:5)[0].click
-          end
-        when :music
+      when :image
+        sleep 5
+        texto = "carga jpg"
+        find(:css, 'div.file-name.list-view', text: texto, wait:20)
+        puts "Se encontro la imagen".cyan
+        within(find(:css, 'div.file.app-droppable.list-view', text: texto, wait:10))do
+          all(:css, 'div.action-icon', wait:5)[0].click
+        end
+      when :music
         texto = "carga mp3"
         find(:css, 'div.file-name.list-view', text: texto, wait:20)
         puts "Se encontro el audio".cyan
@@ -1544,6 +1638,8 @@ class UserPage
          sleep 5
           find(:id, 'Move', wait:10).click
         end
+      when :'Main Menu'
+         find(:id, 'Move', wait:10).click
       end
     end
 

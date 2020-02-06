@@ -1,7 +1,185 @@
 Feature:
   Validate all cases for Claro Drive
 
+  #ALL COUNTRIES
+  #CDFS-292 #CDFS-318
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country Colombia in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Country" link in the "Claro drive" landing
+    Then I should see the "Colombia" page
+
+  #CDFS-294 #CDFS-318
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country Brasil in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Brasil" link in the "Claro drive" landing
+    Then I should see the "Brasil" page
+
+  #CDFS-295 #CDFS-318
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country Guatemala in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Guatemala" link in the "Claro drive" landing
+    Then I should see the "Guatemala" page
+
+  #CDFS-296 #CDFS-318
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country Honduras in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Honduras" link in the "Claro drive" landing
+    Then I should see the "Honduras" page
+
+  #CDFS-297 #CDFS-318
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country Nicaragua in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Nicaragua" link in the "Claro drive" landing
+    Then I should see the "Nicaragua" page
+
+  #CDFS-298 #CDFS-318
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country El Salvador in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "El Salvador" link in the "Claro drive" landing
+    Then I should see the "El Salvador" page
+
+  #CDFS-299 #CDFS-318
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country Costa Rica in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Costa Rica" link in the "Claro drive" landing
+    Then I should see the "Costa Rica" page
+
+  #CDFS-300 #CDFS-318
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country Perú in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Peru" link in the "Claro drive" landing
+    Then I should see the "Peru" page
+
+  #CDFS-301 #CDFS-318
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country Argentina in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Argentina" link in the "Claro drive" landing
+    Then I should see the "Argentina" page
+
+  #CDFS-302 #CDFS-318
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country Panamá in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Panama" link in the "Claro drive" landing
+    Then I should see the "Panama" page
+
+  #CDFS-303 #CDFS-318
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country Chile in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Chile" link in the "Claro drive" landing
+    Then I should see the "Chile" page
+
+  #CDFS-304 #CDFS-318
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country Ecuador in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Ecuador" link in the "Claro drive" landing
+    Then I should see the "Ecuador" page
+
+  #CDFS-306 #CDFS-318
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country Puerto Rico in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Puerto Rico" link in the "Claro drive" landing
+    Then I should see the "Puerto Rico" page
+
+  #CDFS-307 #CDFS-318
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country República Dominicana in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Republica Dominicana" link in the "Claro drive" landing
+    Then I should see the "Republica Dominicana" page
+
+  #CDFS-308 #CDFS-318
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country options in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Uruguay" link in the "Claro drive" landing
+    Then I should see the "Uruguay" page
+
+  #CDFS-309 #CDFS-318
+  @p0 @mx @chrome @mozilla @safari @edge @ie
+  Scenario: Validate the country options in the header
+    Given The Landing page
+    When I open the app
+    And I should see the "Paises" link in the "Claro drive" landing
+    When I make click on this "Paises" link in the "Claro drive" landing
+    Then I should see all Paises links
+    And I make click on this "Paraguay" link in the "Claro drive" landing
+    Then I should see the "Paraguay" page
+
   #ALL CLARO LANDING
+  #CDFS-315
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link of Claro video in the header
     Given The Landing page
@@ -11,6 +189,7 @@ Feature:
     And I change to "last" tab2
     Then I should see the "Claro video" page
 
+  #CDFS-316
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link of Claro música in the header
     Given The Landing page
@@ -20,6 +199,7 @@ Feature:
     And I change to "last" tab
     Then I should see the "Claro música" page
 
+  #CDFS-317
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link of Claro shop in the header
     Given The Landing page
@@ -29,16 +209,7 @@ Feature:
     And I change to "last" tab
     Then I should see the "Claro shop" page
 
-  @p0 @mx @chrome @mozilla @safari @edge @ie
-  Scenario: Validate the country options in the header
-    Given The Landing page
-    When I open the app
-    And I should see the "Paises" link in the "Claro drive" landing
-    When I make click on this "Paises" link in the "Claro drive" landing
-    Then I should see all Paises links
-    And I make click on this "Country" link in the "Claro drive" landing
-    Then I should see the "Colombia" page
-
+  #CDFS-319
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link of the Claro drive logo in the header
     Given The Landing page
@@ -47,6 +218,7 @@ Feature:
     When I make click on this "Logo Claro drive" link in the "Claro drive" landing
     Then I should see the "Claro drive" page
 
+  #CDFS-320
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link register of the Claro drive
     Given The Landing page
@@ -55,6 +227,7 @@ Feature:
     When I make click on this "registered" link in the "Claro drive" landing
     Then I should see the "registered" page
 
+  #CDFS-321
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link login of the Claro drive
     Given The Landing page
@@ -63,6 +236,7 @@ Feature:
     When I make click on this "Inicia sesión" link in the "Claro drive" landing
     Then I should see the "Inicia sesión" page
 
+  #CDFS-322
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Descubre of the Claro drive
     Given The Landing page
@@ -71,6 +245,7 @@ Feature:
     When I make click on this "Descubre" link in the "Claro drive" landing
     Then I should see the "Descubre" page
 
+  #CDFS-323
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Comparte of the Claro drive
     Given The Landing page
@@ -79,6 +254,7 @@ Feature:
     When I make click on this "Comparte" link in the "Claro drive" landing
     Then I should see the "Comparte" page
 
+  #CDFS-324
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Respalda of the Claro drive
     Given The Landing page
@@ -87,6 +263,7 @@ Feature:
     When I make click on this "Respalda" link in the "Claro drive" landing
     Then I should see the "Respalda" page
 
+  #CDFS-325
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Descarga of the Claro drive
     Given The Landing page
@@ -95,6 +272,7 @@ Feature:
     When I make click on this "Descarga" link in the "Claro drive" landing
     Then I should see the "Descarga" page
 
+  #CDFS-326
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Opciones of the Claro drive
     Given The Landing page
@@ -103,6 +281,7 @@ Feature:
     When I make click on this "Opciones" link in the "Claro drive" landing
     Then I should see the "Opciones" page
 
+  #CDFS-327
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Planes of the Claro drive
     Given The Landing page
@@ -111,6 +290,7 @@ Feature:
     When I make click on this "Planes" link in the "Claro drive" landing
     Then I should see the "Planes" page
 
+  #CDFS-339
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Negocio of the Claro drive
     Given The Landing page
@@ -119,6 +299,7 @@ Feature:
     When I make click on this "Negocio" link in the "Claro drive" landing
     Then I should see the "Negocio" page
 
+  #CDFS-328
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the button Usa tus 25 Gb of the Claro drive
     Given The Landing page
@@ -127,6 +308,7 @@ Feature:
     When I make click on this "Boton 25 GB gratis con telcel o telmex" link in the "Claro drive" landing
     Then I should see the "registered2" page
 
+  #CDFS-329
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the button Inicia Sesión of the Claro drive
     Given The Landing page
@@ -134,6 +316,7 @@ Feature:
     And I should see the "Boton Inicia sesión" link in the "Claro drive" landing
     When I make click on this "Boton Inicia sesión" link in the "Claro drive" landing
     Then I should see the "Boton Inicia sesión" page
+
 
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Preguntas Frecuentes of the Claro drive
@@ -143,12 +326,14 @@ Feature:
     When I make click on this "Preguntas Frecuentes" link in the "Claro drive" landing
     Then I should see the "Preguntas Frecuentes" page
 
+  #CDFS-330
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Correo Electrónico of the Claro drive
     Given The Landing page
     When I open the app
     And I should see the "Correo Electrónico" link in the "Claro drive" landing
 
+  #CDFS-331
   @p0 @mx @chrome @mozilla @safari
   Scenario: Validate the link Formas de Pago Telmex of the Claro drive
     Given The Landing page
@@ -157,6 +342,7 @@ Feature:
     When I make click on this "Formas de pago Telmex" link in the "Claro drive" landing
     Then I should see the "Formas de pago Telmex" page
 
+  #CDFS-332
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Formas de Pago Telcel of the Claro drive
     Given The Landing page
@@ -165,6 +351,7 @@ Feature:
     When I make click on this "Formas de pago Telcel" link in the "Claro drive" landing
     Then I should see the "Formas de pago Telcel" page
 
+  #CDFS-333
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Formas de Pago TDC of the Claro drive
     Given The Landing page
@@ -172,6 +359,7 @@ Feature:
     And I should see the "Formas de pago TDC" link in the "Claro drive" landing
     When I make click on this "Formas de pago TDC" link in the "Claro drive" landing
     Then I should see the "Formas de pago TDC" page
+
 
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Acerca de of the Claro drive
@@ -182,6 +370,7 @@ Feature:
     And I change to "last" tab
     Then I should see the "Acerca de" page
 
+  #CDFS-334
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Terminos y condiciones of the Claro drive
     Given The Landing page
@@ -191,6 +380,7 @@ Feature:
     And I change to "last" tab
     Then I should see the "Terminos y condiciones" page
 
+  #CDFS-334
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Politica de privacidad of the Claro drive
     Given The Landing page
@@ -200,6 +390,7 @@ Feature:
     And I change to "last" tab
     Then I should see the "Politica de privacidad" page
 
+  #CDFS-335
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Descarga la app Android of the Claro drive
     Given The Landing page
@@ -209,6 +400,7 @@ Feature:
     And I change to "last" tab
     Then I should see the "Descarga la app Android" page
 
+  #CDFS-336
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Descarga la app iOS of the Claro drive
     Given The Landing page
@@ -218,6 +410,7 @@ Feature:
     And I change to "last" tab
     Then I should see the "Descarga la app iOS" page
 
+  #CDFS-337
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Descarga la app Windows / Mac of the Claro drive
     Given The Landing page
@@ -234,9 +427,10 @@ Feature:
     When I make click on this "Data Security" link in the "Claro drive" landing
     Then I should see the "Data Security" page
 
-    # Claro drive Negocio
+  #Claro drive Negocio
+  #CDFS-340
   @p0 @mx @chrome @mozilla @safari @edge @ie
-  Scenario: Validate the link Negocio of the Claro drive
+  Scenario: Validate the link Negocio Caracteristicas of the Claro drive
     Given The Landing page
     When I open the app
     And I should see the "Negocio" link in the "Claro drive" landing
@@ -244,8 +438,9 @@ Feature:
     And I make click on this "Caracteristicas" link in the "Claro negocio" landing
     Then I should see the "Caracteristicas" page
 
+  #CDFS-341
   @p0 @mx @chrome @mozilla @safari @edge @ie
-  Scenario: Validate the link Negocio of the Claro drive
+  Scenario: Validate the link Negocio Descarga of the Claro drive
     Given The Landing page
     When I open the app
     And I should see the "Negocio" link in the "Claro drive" landing
@@ -253,8 +448,9 @@ Feature:
     And I make click on this "Descarga" link in the "Claro negocio" landing
     Then I should see the "Descarga" page
 
+  #CDFS-342
   @p0 @mx @chrome @mozilla @safari @edge @ie
-  Scenario: Validate the link Negocio of the Claro drive
+  Scenario: Validate the link Negocio Planes of the Claro drive
     Given The Landing page
     When I open the app
     And I should see the "Negocio" link in the "Claro drive" landing
@@ -262,14 +458,16 @@ Feature:
     And I make click on this "Comparar planes" link in the "Claro negocio" landing
     Then I should see the "Comparar planes" page
 
+  #CDFS-343
   @p0 @mx @chrome @mozilla @safari @edge @ie
-  Scenario: Validate the link Negocio of the Claro drive
+  Scenario: Validate the link Negocio Personal of the Claro drive
     Given The Landing page
     When I open the app
     And I should see the "Negocio" link in the "Claro drive" landing
     When I make click on this "Negocio" link in the "Claro drive" landing
     And I make click on this "Claro drive personal" link in the "Claro negocio" landing
     Then I should see the "Claro drive" page
+
 
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Negocio Preguntas Frecuentes of the Claro drive
@@ -308,6 +506,7 @@ Feature:
     And I change to "last" tab
     Then I should see the "Acerca de" page
 
+  #CDFS-348
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Negocio of the Claro drive
     Given The Landing page
@@ -318,6 +517,7 @@ Feature:
     And I change to "last" tab
     Then I should see the "Negocio Terminos y condiciones" page
 
+  #CDFS-349
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Negocio of the Claro drive
     Given The Landing page
@@ -328,6 +528,7 @@ Feature:
     And I change to "last" tab
     Then I should see the "Politica de privacidad" page
 
+  #CDFS-350
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Descarga la app Android of the Claro drive
     Given The Landing page
@@ -339,6 +540,7 @@ Feature:
     And I change to "last" tab
     Then I should see the "Descarga la app Android" page
 
+  #CDFS-351
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Descarga la app iOS of the Claro drive
     Given The Landing page
@@ -350,6 +552,7 @@ Feature:
     And I change to "last" tab
     Then I should see the "Descarga la app iOS" page
 
+  #CDFS-352
   @p0 @mx @chrome @mozilla @safari @edge @ie
   Scenario: Validate the link Descarga la app Windows / Mac of the Claro drive
     Given The Landing page
@@ -369,8 +572,9 @@ Feature:
     And I make click on this "Negocio Comienza Ahora" link in the "Claro negocio" landing
     Then I should see the "Telmex Negocio" page
 
+  #CDFS-345
   @p0 @mx @chrome @mozilla @safari @edge @ie
-  Scenario: Validate the link Negocio of the Claro drive
+  Scenario: Validate the link Negocio 250Gb of the Claro drive
     Given The Landing page
     When I open the app
     And I should see the "Negocio" link in the "Claro drive" landing
@@ -379,8 +583,9 @@ Feature:
     And I make click on this "Obtener 250Gb" link in the "Claro negocio" landing
     Then I should see the "Telmex Negocio" page
 
+  #CDFS-346
   @p0 @mx @chrome @mozilla @safari @edge @ie
-  Scenario: Validate the link Negocio of the Claro drive
+  Scenario: Validate the link Negocio 1Tb of the Claro drive
     Given The Landing page
     When I open the app
     And I should see the "Negocio" link in the "Claro drive" landing
@@ -390,6 +595,7 @@ Feature:
     Then I should see the "Telmex Negocio" page
 
   #FOR CLARO DRIVE USER (BUZON)
+  #CDFS-690
   @p0 @mx @email @chrome @mozilla @safari
   Scenario: Validate the creation of a new folder in partner email
     Given I am an "registered" user
@@ -406,6 +612,7 @@ Feature:
     Then I should see "folder" element
     And  I logout
 
+  #CDFS-695
   @p0 @mx @email @chrome @mozilla @safari
   Scenario: Validate the creation of a new file in partner email
     Given I am an "registered" user
@@ -417,6 +624,7 @@ Feature:
     Then I should see "login email" page
     And I enter "75" in partner "email" - smoke
     And I click on "next" button from "login email" page
+    And I wait "5"
     And I click on "new file" button from "user" page
     And I enter "name file" in "home" page
     Then I should see "editor" element
@@ -453,6 +661,7 @@ Feature:
     Then I should see "login email" page
     And I enter "75" in partner "email" - smoke
     And I click on "next" button from "login email" page
+    And I wait "5"
     And I click on "share" button from "user" page
     And I enter "target email" in "home" page
     And I click on "sharing confirm" button from "user" page
@@ -461,6 +670,7 @@ Feature:
     And I stop sharing for "email"
     And I logout
 
+  #CDFS-918
   @p0 @mx @email @chrome @mozilla @safari
   Scenario: Validate the correctly share to element for email to user register in claro drive
     Given I am an "registered" user
@@ -480,6 +690,7 @@ Feature:
     And I stop sharing for "email"
     And I logout
 
+  #CDFS-816 #CDFS-814
   @p0 @mx @email @chrome @mozilla
   Scenario: Validate the correctly share to element for link
     Given I am an "registered" user
@@ -509,10 +720,11 @@ Feature:
     Then I should see "login email" page
     And I enter "75" in partner "email" - smoke
     And I click on "next" button from "login email" page
-    And I click on "personal" button from "user" page
+    And I wait "5"
+    And I click on "configuration" button from "user" page
     And I enter "new name" in "home" page
     Then I should see "new name" element
-    And I logout
+    #And I logout
 
   @p0 @mx @email @chrome @mozilla @safari @edge @ie
   Scenario: Validate the page about claro drive
@@ -611,6 +823,7 @@ Feature:
     And I logout
 
 
+  #CDFS-661
   @p0 @mx @chrome @mozilla @safari @video @edge @ie
   Scenario: Validate the upload a image jpg in partner claro video
     Given I am an "registered" user
@@ -625,8 +838,10 @@ Feature:
     And I Upload a file "jpg"
     Then I should see "window of uploads" element
     Then I should see "jpg" file
+    And I wait "3"
     And  I logout
 
+  #CDFS-664
   @p0 @mx @chrome @mozilla @safari @video
   Scenario: Validate the upload a music mp3 in partner  claro video
     Given I am an "registered" user
@@ -641,8 +856,10 @@ Feature:
     And I Upload a file "mp3"
     Then I should see "window of uploads" element
     Then I should see "mp3" file
+    And I wait "3"
     And  I logout
 
+  #CDFS-666
   @p0 @mx @chrome @mozilla @safari @video
   Scenario: Validate the upload a video mp4 in partner claro video
     Given I am an "registered" user
@@ -657,10 +874,11 @@ Feature:
     And I Upload a file "mp4"
     Then I should see "window of uploads" element
     Then I should see "mp4" file
+    And I wait "3"
     And  I logout
 
   @p0 @mx @chrome @mozilla @safari @video
-  Scenario: Validate the upload a file txt in partner  claro video
+  Scenario: Validate the upload a file txt in partner claro video
     Given I am an "registered" user
     When I open the app
     And I logout if a session is started
@@ -673,6 +891,7 @@ Feature:
     And I Upload a file "txt"
     Then I should see "window of uploads" element
     Then I should see "txt" file
+    And I wait "3"
     And  I logout
 
   @p0 @mx @email @chrome @mozilla @safari @edge @ie
@@ -686,6 +905,7 @@ Feature:
     Then I should see "login email" page
     And I enter "75" in partner "email" - smoke
     And I click on "next" button from "login email" page
+    And I wait "5"
     And I click on "delete image" button from "user" page
     And I click on "garbage" button from "user" page
     And I click on "restore image" button from "user" page
@@ -704,6 +924,7 @@ Feature:
     Then I should see "login email" page
     And I enter "75" in partner "email" - smoke
     And I click on "next" button from "login email" page
+    And I wait "5"
     And I click on "delete video" button from "user" page
     And I click on "garbage" button from "user" page
     And I click on "restore video" button from "user" page
@@ -722,6 +943,7 @@ Feature:
     Then I should see "login email" page
     And I enter "75" in partner "email" - smoke
     And I click on "next" button from "login email" page
+    And I wait "5"
     And I click on "delete audio" button from "user" page
     And I click on "garbage" button from "user" page
     And I click on "restore audio" button from "user" page
@@ -740,6 +962,7 @@ Feature:
     Then I should see "login email" page
     And I enter "75" in partner "email" - smoke
     And I click on "next" button from "login email" page
+    And I wait "5"
     And I click on "delete text" button from "user" page
     And I click on "garbage" button from "user" page
     And I click on "restore text" button from "user" page
@@ -747,8 +970,9 @@ Feature:
     Then I should see "text" element
     And I logout
 
+  #CDFS-795
   @chrome @mozilla @edge @ie
-  Scenario: Validate the add favorite for carpet, image, music, video and txt
+  Scenario: Validate the add favorite for carpet
     Given I am an "registered" user
     When I open the app
     And I logout if a session is started
@@ -758,13 +982,71 @@ Feature:
     Then I should see "login email" page
     And I enter "75" in partner "email" - smoke
     And I click on "next" button from "login email" page
-    And I add favorite to "image"
-    And I add favorite to "video"
-    And I add favorite to "music"
+    And I wait "10"
     And I add favorite to "carpet"
-    And I add favorite to "txt"
-    And  I logout
 
+  #CDFS-794
+  @chrome @mozilla @edge @ie
+  Scenario: Validate the add favorite for txt
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I wait "10"
+    And I add favorite to "txt"
+    And I logout
+
+  #CDFS-794
+  @chrome @mozilla @edge @ie
+  Scenario: Validate the add favorite for image
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I wait "10"
+    And I add favorite to "image"
+
+  #CDFS-794
+  @chrome @mozilla @edge @ie
+  Scenario: Validate the add favorite for video
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I wait "10"
+    And I add favorite to "video"
+
+  #CDFS-794
+  @chrome @mozilla @edge @ie
+  Scenario: Validate the add favorite for music
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I wait "10"
+    And I add favorite to "music"
+
+  #CDFS-797 #CDFS-798 #CDFS-801 #CDFS-802
   @p0 @mx @video @chrome @mozilla @safari
   Scenario: Validate details for image, music, video and txt in all files
     Given I am an "registered" user
@@ -778,26 +1060,41 @@ Feature:
     And I click on "next" button from "login email" page
     Then I should do all functions for "carpet2" element
     And I click on "close file" button from "user" page
-    And I download element "carpet2"
-    Then I should see "carpet" file downloaded
     Then I should do all functions for "image2" element
     And I click on "close file" button from "user" page
-    And I download element "jpg2"
-    Then I should see "jpg" file downloaded
-    Then I should do all functions for "music2" element
+     Then I should do all functions for "music2" element
     And I click on "close file" button from "user" page
-    And I download element "mp32"
-    Then I should see "mp3" file downloaded
     Then I should do all functions for "video2" element
     And I click on "close file" button from "user" page
-    And I download element "mp42"
-    Then I should see "mp4" file downloaded
     Then I should do all functions for "txt2" element
     And I click on "close file" button from "user" page
+    And  I logout
+
+  #CDFS-843 #CDFS-844
+  @p0 @mx @video @chrome @mozilla @safari
+  Scenario: Validate downloads for image, music, video and txt in all files
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I download element "carpet2"
+    Then I should see "carpet" file downloaded
+    And I download element "jpg2"
+    Then I should see "jpg" file downloaded
+    And I download element "mp32"
+    Then I should see "mp3" file downloaded
+    And I download element "mp42"
+    Then I should see "mp4" file downloaded
     And I download element "txt2"
     Then I should see "txt" file downloaded
     And  I logout
 
+  #CDFS-801 #CDFS-802
   @p0 @mx @video @chrome @mozilla @safari
   Scenario: Validate details for image, music, video and txt in recent
     Given I am an "registered" user
@@ -810,24 +1107,44 @@ Feature:
     And I enter "75" in partner "email" - smoke
     And I click on "next" button from "login email" page
     And I click on "recent" button from "user" page
+    Then I should do all functions for "carpet" element
+    And I click on "close file" button from "user" page
     Then I should do all functions for "image" element
     And I click on "close file" button from "user" page
-    And I download element "jpg"
-    Then I should see "jpg" file downloaded
     Then I should do all functions for "music" element
     And I click on "close file" button from "user" page
-    And I download element "mp3"
-    Then I should see "mp3" file downloaded
     Then I should do all functions for "video" element
     And I click on "close file" button from "user" page
-    And I download element "mp4"
-    Then I should see "mp4" file downloaded
     Then I should do all functions for "txt" element
     And I click on "close file" button from "user" page
+    And  I logout
+
+  #CDFS-843 #CDFS-844
+  @p0 @mx @video @chrome @mozilla @safari
+  Scenario: Validate downloads for image, music, video and txt in recent
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "recent" button from "user" page
+    And I download element "carpet"
+    Then I should see "carpet" file downloaded
+    And I download element "jpg"
+    Then I should see "jpg" file downloaded
+    And I download element "mp3"
+    Then I should see "mp3" file downloaded
+    And I download element "mp4"
+    Then I should see "mp4" file downloaded
     And I download element "txt"
     Then I should see "txt" file downloaded
     And  I logout
 
+  #CDFS-801 #CDFS-802
   @p0 @mx @video @chrome @mozilla @safari
   Scenario: Validate details for carpet, image, music, video and txt in favorites
     Given I am an "registered" user
@@ -842,26 +1159,42 @@ Feature:
     And I click on "favorites" button from "user" page
     Then I should do all functions for "carpet2" element
     And I click on "close file" button from "user" page
-    And I download element "carpet2"
-    Then I should see "carpet" file downloaded
     Then I should do all functions for "image2" element
     And I click on "close file" button from "user" page
-    And I download element "jpg2"
-    Then I should see "jpg" file downloaded
     Then I should do all functions for "music2" element
     And I click on "close file" button from "user" page
-    And I download element "mp32"
-    Then I should see "mp3" file downloaded
     Then I should do all functions for "video2" element
     And I click on "close file" button from "user" page
-    And I download element "mp42"
-    Then I should see "mp4" file downloaded
     Then I should do all functions for "txt2" element
     And I click on "close file" button from "user" page
+    And  I logout
+
+  #CDFS-843 #CDFS-844
+  @p0 @mx @video @chrome @mozilla @safari
+  Scenario: Validate downloads for image, music, video and txt in favorites
+    Given I am an "registered" user
+    When I open the app
+    And I logout if a session is started
+    And I click on "login" button from "home" page
+    Then I should see "partners" page
+    And I click on "email" partner option
+    Then I should see "login email" page
+    And I enter "75" in partner "email" - smoke
+    And I click on "next" button from "login email" page
+    And I click on "favorites" button from "user" page
+    And I download element "carpet2"
+    Then I should see "carpet" file downloaded
+    And I download element "jpg2"
+    Then I should see "jpg" file downloaded
+    And I download element "mp32"
+    Then I should see "mp3" file downloaded
+    And I download element "mp42"
+    Then I should see "mp4" file downloaded
     And I download element "txt2"
     Then I should see "txt" file downloaded
     And  I logout
 
+  #CDFS-801 #CDFS-802 #CDFS-844
   @p0 @mx @video @chrome @mozilla @safari
   Scenario: Validate details for images in images section
     Given I am an "registered" user
@@ -880,6 +1213,7 @@ Feature:
     Then I should see "jpg" file downloaded
     And  I logout
 
+  #CDFS-801 #CDFS-802 #CDFS-844
   @p0 @mx @video @chrome @mozilla @safari
   Scenario: Validate details for videos in videos section
     When I open the app
@@ -897,8 +1231,9 @@ Feature:
     Then I should see "mp4" file downloaded
     And  I logout
 
+  #CDFS-830 #CDFS-834
   @p0 @mx @email @chrome @mozilla @safari @edge @ie
-  Scenario: Validate the correct function of delete and restore of a file
+  Scenario: Validate the rename of an image file
     Given I am an "registered" user
     When I open the app
     And I logout if a session is started
@@ -911,8 +1246,9 @@ Feature:
     And I click on "rename image" button from "user" page
     And  I logout
 
+  #CDFS-830 #CDFS-834
   @p0 @mx @email @chrome @mozilla @safari @edge @ie
-  Scenario: Validate the correct function of delete and restore of a file
+  Scenario: Validate the rename of a video file
     Given I am an "registered" user
     When I open the app
     And I logout if a session is started
@@ -925,8 +1261,9 @@ Feature:
     And I click on "rename video" button from "user" page
     And  I logout
 
+  #CDFS-830 #CDFS-834
   @p0 @mx @email @chrome @mozilla @safari @edge @ie
-  Scenario: Validate the correct function of delete and restore of a file
+  Scenario: Validate the rename of a music file
     Given I am an "registered" user
     When I open the app
     And I logout if a session is started
@@ -939,8 +1276,9 @@ Feature:
     And I click on "rename music" button from "user" page
     And  I logout
 
+  #CDFS-834
   @p0 @mx @email @chrome @mozilla @safari @edge @ie
-  Scenario: Validate the correct function of delete and restore of a file
+  Scenario: Validate the rename of a text file
     Given I am an "registered" user
     When I open the app
     And I logout if a session is started
@@ -953,8 +1291,9 @@ Feature:
     And I click on "rename txt" button from "user" page
     And  I logout
 
+  #CDFS-838
   @p0 @mx @email @chrome @mozilla @safari @edge @ie
-  Scenario: Validate the correct function of delete and restore of a file
+  Scenario: Validate to move an image to a Carpet
     Given I am an "registered" user
     When I open the app
     And I logout if a session is started
@@ -964,6 +1303,7 @@ Feature:
     Then I should see "login email" page
     And I enter "75" in partner "email" - smoke
     And I click on "next" button from "login email" page
+    And I wait "5"
     And I click on "move image" button from "user" page
     And I choose "Carpeta Automatizacion" folder from choose carpet option
     And I click on "Carpeta Automatizacion" button from "user" page
@@ -1030,35 +1370,38 @@ Feature:
     Then I should see "login email" page
     And I enter "75" in partner "email" - smoke
     And I click on "next" button from "login email" page
+    And I wait "8"
     #And I delete "image"
     #And I wait "5"
     And I delete "music"
-    And I wait "5"
+    And I wait "8"
     And I delete "video"
-    And I wait "5"
+    And I wait "8"
     And I delete "txt"
-    And I wait "5"
+    And I wait "8"
     And I delete "carpet"
-    And I wait "5"
+    And I wait "8"
     And I delete "file"
-    And I wait "5"
+    And I wait "8"
     And I delete "pic1"
-    And I wait "5"
+    And I wait "8"
     And I delete "pic2"
-    And I wait "5"
+    And I wait "8"
     And I delete "pic3"
-    And I wait "5"
+    And I wait "8"
     And I delete "pic4"
-    And I wait "5"
+    And I wait "8"
     And I delete "pic5"
-    And I wait "5"
+    And I wait "8"
     And I click on "garbage" button from "user" page
     And I click on "delete files" button from "user" page
     And  I logout
 
-   #FOR REGISTRATION AND SUBSCRIPTION
+  #FOR REGISTRATION AND SUBSCRIPTION
+
+  #CDFS-217
   @p0 @mx @email @chrome @mozilla @safari @edge @ie
-  Scenario: Validate a subscription in partner email with payment method credit card plan 75gb
+  Scenario: Validate a subscription in partner email with payment method credit card plan 200 GB
     Given I am an "new" user
     When I open the app
     And I logout if a session is started
@@ -1080,8 +1423,9 @@ Feature:
     Then I should see "user" page
     Then I logout
 
+  #CDFS-218
   @p0 @mx @email @chrome @mozilla @safari @edge @ie
-  Scenario: Validate a subscription in partner email with payment method credit card plan 150gb
+  Scenario: Validate a subscription in partner email with payment method credit card plan 300 GB
     Given I am an "new" user
     When I open the app
     And I logout if a session is started
@@ -1103,8 +1447,9 @@ Feature:
     Then I should see "user" page
     Then I logout
 
+  #CDFS-219
   @p0 @mx @email @chrome @mozilla @safari @edge @ie
-  Scenario: Validate a subscription in partner email with payment method credit card plan 1024gb
+  Scenario: Validate a subscription in partner email with payment method credit card plan 1024 GB
     Given I am an "new" user
     When I open the app
     And I logout if a session is started
@@ -1127,7 +1472,7 @@ Feature:
     Then I logout
 
   @p0 @mx @email @chrome @mozilla @safari @edge @ie
-  Scenario: Registro in Claro Música
+  Scenario: Validate subscription 200gb in partner claro musica with payment method credit card
     Given I am an "registered" user
     When I go to "claro musica"
     And I click on "listen free" button from "claro musica" app
@@ -1158,7 +1503,7 @@ Feature:
     Then I logout
 
   @p0 @mx @video @chrome @mozilla @safari @edge @ie
-  Scenario: Validate subscription 75gb in partner claro video with payment method credit card
+  Scenario: Validate subscription 200gb in partner claro video with payment method credit card
     Given  I am an "registered" user
     When I generate "correct user" in claro video
     When I open the app
@@ -1209,6 +1554,7 @@ Feature:
     Then I logout
 
   #START SESSION
+  #CDFS-477
   @p0 @mx @chrome @mozilla @safari
   Scenario: Login as registered user with email and payment method credit card
     Given I am an "registered" user
@@ -1223,6 +1569,8 @@ Feature:
     And I get the time used to login on "correo" partner
     And  I logout
 
+
+  #CDFS-473
   @p0 @mx @chrome @mozilla @safari
   Scenario: Login as registered user with telmex
     Given I am an "registered" user
@@ -1237,7 +1585,8 @@ Feature:
     And I get the time used to login on "telmex" partner
     And I logout
 
-  # @p0 @mx @chrome @mozilla @safari
+  #CDFS-474
+  #@p0 @mx @chrome @mozilla @safari
   Scenario: Login as registered user with telcel
     Given I am an "registered" user
     When I open the app
@@ -1252,8 +1601,9 @@ Feature:
     And I enter "correct password" in partner "login telcel"
     And I click on "continue" button from "login telcel" page
     And I get the time used to login on "telcel" partner
-    And  I logout
+    And I logout
 
+  #CDFS-475
   @p0 @mx @chrome @mozilla @safari
   Scenario: Login as registered user with payment method credit card in partner claro musica
     Given I am an "registered" user
@@ -1266,10 +1616,10 @@ Feature:
     And I enter "correct user with credit card" in partner "claro musica"
     And I click on "next" button from "login claro musica" page
     And I get the time used to login on "claro musica" partner
-    And  I logout
+    And I logout
 
+  #CDFS-476
   @p0 @mx @chrome @mozilla @safari
-    #TC-3306
   Scenario: Login as registered user with payment method credit card in partner claro video
     Given I am an "registered" user
     When I open the app
@@ -1283,7 +1633,7 @@ Feature:
     And I get the time used to login on "claro video" partner
     And  I logout
 
-  @p0 @mx @email @chrome @mozilla @safari @edge @ie
+  #@p0 @mx @email @chrome @mozilla @safari @edge @ie
   Scenario: Validate the correct function of delete and restore of a file
     Given I am an "registered" user
     When I open the app

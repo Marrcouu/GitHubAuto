@@ -131,12 +131,12 @@ end
         puts "Paso Mozilla - Abrir bandeja"
       end
 
-      find(:xpath, '//*[@id="app"]/div/div[2]/div[2]/div[1]/div[2]/div/div[2]/div/div[1]/ul/li[1]/div/div[2]', wait:40).click
+      find(:xpath, '//*[@id="app"]/div[1]/div[2]/div[2]/div[1]/div[2]/div/div[2]/div/div[1]/ul/li', wait:40).click
       within_frame(find(:id, 'idIframe', wait:30)) do
-        find(:xpath, '/html/body/table[1]/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[2]/td/table/tbody/tr/td/a', wait:40).click
+        find(:xpath, '/html/body/table[2]/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr[2]/td/table/tbody/tr/td/a', wait:40).click
       end
       switch_to_window(windows.last)
-      find(:css, 'img.logoTAG',wait:30)
+      find(:css, 'img.logo-CM',wait:30)
       puts "Se termino de confirmar el correo"
     end
 
